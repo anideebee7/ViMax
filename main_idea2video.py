@@ -1,3 +1,4 @@
+import utils.session
 import asyncio
 from pipelines.idea2video_pipeline import Idea2VideoPipeline
 
