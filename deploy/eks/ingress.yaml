@@ -1,0 +1,36 @@
+# ALB Ingress (requires AWS Load Balancer Controller)
+# Edit host and certificate-arn, then: kubectl apply -f ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: vimax
+  namespace: vimax
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/healthcheck-path: /
+    # alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:REGION:ACCOUNT:certificate/CERT_ID
+    # alb.ingress.kubernetes.io/ssl-redirect: "443"
+spec:
+  rules:
+    - host: vimax.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: vimax-frontend
+                port:
+                  number: 80
+    - host: api.vimax.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: vimax-api
+                port:
+                  number: 8000

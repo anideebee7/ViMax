@@ -1,0 +1,38 @@
+# ViMax – API (FastAPI) + Frontend (Vue)
+# Usage:
+#   1. cp .env.example .env and set API keys, S3, etc.
+#   2. cp frontend/.env.sample frontend/.env  (optional; VITE_API_URL is set below)
+#   3. docker compose up --build
+
+services:
+  api:
+    image: vimax-api:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - /app/__pycache__
+    env_file:
+      - .env
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    image: vimax-frontend:latest
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:8000
+      - VITE_PORT=5173
+    command: npm run dev

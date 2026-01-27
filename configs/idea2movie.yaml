@@ -1,0 +1,27 @@
+# Idea to Movie Pipeline Configuration
+
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 200
+
+# Trend analyzer for film trends
+trend_analyzer:
+  google_trends:
+    enabled: true
+  youtube_trends:
+    enabled: true
+    api_key: ${YOUTUBE_API_KEY}
+  reddit:
+    enabled: true
+    subreddits:
+      - movies
+      - Screenwriting
+      - TrueFilm
+  newsapi:
+    enabled: false
+
+working_dir: .working_dir/movie
+force_regenerate: false

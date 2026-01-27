@@ -377,8 +377,8 @@ uv sync
 
 
 ### 🎯 **Usage**
-main_idea2video.py is used to convert your ideas into videos.
-You need to configure the model and API key information in the configs/idea2video.yaml file, including three parts—the chat model, the image generator, and the video generator, as shown below
+main_video.py is used to convert your ideas into videos.
+You need to configure the model and API key information in the configs/video.yaml file, including three parts—the chat model, the image generator, and the video generator, as shown below
 ```yaml
 chat_model:
   init_args:
@@ -397,10 +397,10 @@ video_generator:
   init_args:
     api_key: <YOUR_API_KEY>
 
-working_dir: .working_dir/idea2video
+working_dir: .working_dir/video
 ```
 
-Then, provide a simple yet thoughtful idea and the corresponding creative requirements in main_idea2video.py.
+Then, provide a simple yet thoughtful idea and the corresponding creative requirements in main_video.py.
 ```bash
 idea = \
 """

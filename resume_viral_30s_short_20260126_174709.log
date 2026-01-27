@@ -1,0 +1,253 @@
+2026-01-26 17:47:09,846 - utils.pipeline.generator_factory - INFO - Image generator rate limiting: 10 req/min, 500 req/day
+2026-01-26 17:47:09,846 - utils.pipeline.generator_factory - INFO - Video generator rate limiting: 2 req/min
+2026-01-26 17:47:09,846 - utils.pipeline.generator_factory - INFO - Creating unified generators with fallback chains...
+2026-01-26 17:47:09,846 - utils.pipeline.generator_factory - INFO -   Gemini API: ✓
+2026-01-26 17:47:09,846 - utils.pipeline.generator_factory - INFO -   PiAPI: ✓
+2026-01-26 17:47:09,846 - utils.pipeline.generator_factory - INFO -   KieAI: ✓
+2026-01-26 17:47:09,846 - tools.generators.factory - INFO - UnifiedImageGenerator initialized with model=nano-banana-pro
+2026-01-26 17:47:09,846 - tools.generators.factory - INFO -   Gemini API: ✓
+2026-01-26 17:47:09,846 - tools.generators.factory - INFO -   PiAPI: ✓
+2026-01-26 17:47:09,846 - tools.generators.factory - INFO -   KieAI: ✓
+2026-01-26 17:47:09,846 - tools.generators.factory - INFO - UnifiedVideoGenerator initialized
+2026-01-26 17:47:09,846 - tools.generators.factory - INFO -   KieAI (veo3_fast): ✓
+2026-01-26 17:47:09,846 - tools.generators.factory - INFO -   PiAPI (veo3.1): ✓
+2026-01-26 17:47:09,846 - tools.generators.factory - INFO -   Google (veo-3.1): ✓
+2026-01-26 17:47:09,846 - pipelines.social.shorts - INFO - Writing viral-optimized script...
+2026-01-26 17:47:09,847 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:47:13,477 - pipelines.social.shorts - INFO - Creating viral visual brief...
+2026-01-26 17:47:13,478 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:47:16,897 - pipelines.social.shorts - INFO - Initiating video production...
+2026-01-26 17:47:35,666 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:47:38,567 - pipelines.base.script - INFO - Registered character portrait for compositing: Millennial -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/1_Millennial/front.png
+2026-01-26 17:47:38,567 - pipelines.base.script - INFO - Registered character portrait for compositing: Boomer -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/3_Boomer/front.png
+2026-01-26 17:47:38,567 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen Z -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/0_Gen Z/front.png
+2026-01-26 17:47:38,567 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen X -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/2_Gen X/front.png
+2026-01-26 17:47:38,567 - pipelines.base.script - INFO - Character compositing enabled for 4 characters
+2026-01-26 17:47:38,567 - pipelines.base.script - INFO - Starting Script2VideoPipeline execution...
+2026-01-26 17:47:57,483 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:01,117 - pipelines.base.script - INFO - Generating prop references for 5 props...
+2026-01-26 17:48:01,117 - PropReferenceGenerator - INFO - Prop reference already exists for Red Wi-Fi Symbol, skipping generation.
+2026-01-26 17:48:01,117 - PropReferenceGenerator - INFO - Prop reference already exists for Router, skipping generation.
+2026-01-26 17:48:01,117 - PropReferenceGenerator - INFO - Prop reference already exists for Landline Phone, skipping generation.
+2026-01-26 17:48:01,118 - PropReferenceGenerator - INFO - Prop reference already exists for Book, skipping generation.
+2026-01-26 17:48:01,118 - PropReferenceGenerator - INFO - Prop reference already exists for Phone Screens, skipping generation.
+2026-01-26 17:48:01,118 - pipelines.base.script - INFO - Prop reference generation completed for 5 props.
+2026-01-26 17:48:01,118 - pipelines.base.script - INFO - Registered character portrait for compositing: Millennial -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/1_Millennial/front.png
+2026-01-26 17:48:01,118 - pipelines.base.script - INFO - Registered character portrait for compositing: Boomer -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/3_Boomer/front.png
+2026-01-26 17:48:01,118 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen Z -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/0_Gen Z/front.png
+2026-01-26 17:48:01,118 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen X -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/2_Gen X/front.png
+2026-01-26 17:48:01,118 - pipelines.base.script - INFO - Character compositing enabled for 4 characters
+2026-01-26 17:48:01,118 - pipelines.base.script - INFO - Creating director brief for storyboard/cinematography...
+2026-01-26 17:48:01,119 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:03,348 - pipelines.base.script - INFO - Director brief created successfully.
+2026-01-26 17:48:03,349 - pipelines.base.script - INFO - Designing storyboard from script...
+2026-01-26 17:48:03,352 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:07,454 - pipelines.base.script - INFO - Storyboard designed with 5 shots.
+2026-01-26 17:48:07,454 - pipelines.base.script - INFO - Decomposing visual descriptions for 5 shots...
+2026-01-26 17:48:07,460 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:07,461 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:07,462 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:07,462 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:07,463 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:11,396 - root - WARNING - Retrying decompose_visual_description due to OutputParserException('Invalid json output: ## Trilogy of Motion: Millennial Deadline\n\n**SHOT TYPE:** Close-Up\n\n**FIRST FRAME (Inception):**\n\n*   **Mise-en-scène:** An office desk dominates the foreground. The surface is cluttered but not excessively messy: scattered papers, a pen, and a coffee mug are present. The primary focal point is a modern wireless router (Prop 1), positioned centrally on the desk. The Millennial\'s (character description provided) hands are blurred and in motion above the router. Sweat beads are visible on their brow. In the background, subtly blurred, is a child\'s toy – perhaps a stuffed animal or a brightly colored block. Lighting is harsh and direct, likely from an overhead fluorescent source, casting strong shadows and emphasizing the stress on the Millennial\'s face. Kinetic text "Millennial: DEADLINE!" with stressed face emojis are overlaid at the top of the frame. A red Wi-Fi symbol (Prop 0) flashes intermittently in the upper corner of the screen.\n\n**LAST FRAME (Resolution):**\n\n*   **Mise-en-scène:** The office desk remains the focal point. The router (Prop 1) is still centrally located, but the Millennial\'s (character description provided) hands are now frozen mid-press on the reset button. The sweat on their face is more pronounced. The child\'s toy in the background remains blurred and unchanged. The harsh lighting persists. The kinetic text and emojis are still present, possibly with increased intensity or visual distortion. The red Wi-Fi symbol (Prop 0) may either still be flashing or transition to a solid red.\n\n**MOTION (Kinetic Journey):**\n\n1.  **Camera:** The shot begins as a static close-up, tightly framed on the Millennial\'s (character description provided) hands and face.\n2.  **Character Vector Path:** The Millennial\'s (character description provided) hands move in rapid, repetitive vertical vectors as they mash the reset button on the router (Prop 1). The speed and intensity of the movement should convey a sense of panic. The character\'s head moves slightly with each button press, further emphasizing the stress. Sweat droplets follow a downward vector from their forehead.\n3.  **Text & Emoji Animation:** The kinetic text "Millennial: DEADLINE!" pulses with increasing speed, and the stressed face emojis jitter erratically to amplify the feeling of urgency.\n4.  **Red Wi-Fi Symbol (Prop 0):** The icon flashes on and off, potentially increasing in frequency as the shot progresses.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ') (Attempt 1)
+2026-01-26 17:48:11,405 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:13,255 - root - WARNING - Retrying decompose_visual_description due to OutputParserException('Invalid json output: ## Trilogy of Motion: Wi-Fi Apocalypse\n\n**DECONSTRUCTION:** This shot isolates the modern dread of Wi-Fi loss, amplifying it through visual distortion and kinetic typography.\n\n**I. STATIC INCEPTION (First Frame):**\n\n*   **Mise-en-scène:** Dominating the frame is a stark white Wi-Fi symbol against a pure black void. The symbol is slightly off-center, favoring the bottom right quadrant, creating immediate visual tension.\n*   **Texture:** The Wi-Fi symbol appears as a crisp, vector-based graphic, intentionally clinical. The black background is absolute, devoid of noise or gradient.\n*   **Lighting:** The Wi-Fi symbol is self-illuminated, casting no light on the nonexistent environment. The edges are razor sharp.\n*   **Color:** The Wi-Fi symbol is a vibrant, alarming red - specifically, #FF0000.\n*   **Aspect Ratio:** 16:9\n\n**II. KINETIC JOURNEY (Motion):**\n\n1.  **Pulsating Intensity:** The Wi-Fi symbol rapidly pulsates in size, scaling between 90% and 110% of its original size, creating a subtle but unsettling rhythm.\n2.  **Glitch Anomaly:** Concurrent with the pulsation, a "glitch" effect is applied. This involves momentary horizontal shearing of the symbol, creating the illusion of digital corruption. The shearing effect displaces fragments of the symbol no more than 5% of the symbol\'s total width, occurring pseudo-randomly.\n3.  **Text Genesis:** Kinetic text reading "NO Wi-Fi!" materializes rapidly, originating from the center of the frame and expanding outwards. The font is a distressed, bold sans-serif. Each letter appears individually with a slight overshoot, exceeding its final position before settling.\n4.  **Seismic Disturbance:** The text undergoes a pronounced shaking animation. This is not uniform; it\'s a combination of translational (X and Y axis) and rotational jitter.\n    *   Translation: Max displacement of 8% of the frame height/width.\n    *   Rotation: Max rotation of 5 degrees, alternating between clockwise and counter-clockwise.\n5.  **Emoji Cascade:** Sad face emojis (Unicode U+1F61E) of varying sizes (scaled randomly between 2% and 5% of the frame height) rain down from the top of the frame, fading out as they reach the bottom. They follow a subtle, randomized sine wave path as they descend.\n\n**III. FINAL RESOLUTION (Last Frame):**\n\n*   **Mise-en-scène:** The Wi-Fi symbol, still red, is now fractured and partially obscured by the kinetic text "NO Wi-Fi!" and a scattering of sad face emojis. The glitch effect remains subtly present, a persistent digital infection.\n*   **Text Dominance:** The "NO Wi-Fi!" text is the most prominent element, centered but slightly chaotic due to the residual shaking animation.\n*   **Emoji Residue:** A few sad face emojis linger near the bottom of the frame, their opacity reduced to 20%, suggesting their fleeting nature.\n*   **Lighting:** The red glow of the Wi-Fi symbol is slightly diffused, as if bleeding into the surrounding blackness due to the digital corruption.\n*   **Continuity Inheritance:** The black background remains absolute, a constant void against the digital chaos.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ') (Attempt 1)
+2026-01-26 17:48:13,257 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:13,654 - root - WARNING - Retrying decompose_visual_description due to OutputParserException('Invalid json output: ## Cinematic Deconstruction: Gen Z "Death"\n\nHere\'s a breakdown of the shot, designed for a high-end VFX team:\n\n**FIRST FRAME (Inception):**\n\n*   **Mise-en-scène:**\n    *   **Setting:** Interior of a modern, deliberately messy living space. Beanbag chair is the focal point, slightly off-center. Modern furniture and decor are scattered around. Neutral wall color.\n    *   **Lighting:** Soft, diffused light source from above and slightly to the left, casting gentle shadows.\n    *   **Character:** <Gen Z> sprawled dramatically on the beanbag chair. Eyes are closed, face tilted slightly upwards. Hand clutches a smartphone against their chest. Brightly colored hair is fanned out on the beanbag. Oversized clothing creates a sense of youthful disarray.\n    *   **Color Palette:** Predominantly cool tones (grays, blues) with pops of color from the character\'s hair and clothing.\n    *   **Focus:** Shallow depth of field, with sharp focus on the character\'s face and the immediate area around them. Background elements are slightly blurred.\n\n**LAST FRAME (Resolution):**\n\n*   **Mise-en-scène:**\n    *   The camera has moved closer to the character\'s face. The beanbag chair now fills a larger portion of the frame.\n    *   **Lighting:** The lighting remains consistent, but the proximity of the camera to the subject enhances the highlights and shadows on their face.\n    *   **Character:** <Gen Z>\'s face is larger in the frame, but their pose remains unchanged. The smartphone is still clutched in their hand.\n    *   **Kinetic Text:** "Gen Z: It\'s Over" is superimposed over the character\'s face, with skull emojis placed around the text. The text has a modern, sans-serif font and a bright, contrasting color (e.g., neon pink or electric blue).\n    *   **Color Palette:** Consistent with the first frame, but the addition of the kinetic text introduces a new, vibrant color element.\n    *   **Focus:** The focus remains sharp on the character\'s face, with the background even more blurred due to the increased proximity.\n\n**MOTION (Kinetic Journey):**\n\n1.  **Camera Movement:**\n    *   **Type:** Rapid Zoom In.\n    *   **Description:** A quick, linear zoom in, starting from the initial wide shot and ending with a close-up of the character\'s face. The zoom is smooth and consistent in speed.\n2.  **Kinetic Text:**\n    *   **Type:** Superimposition.\n    *   **Description:** The kinetic text "Gen Z: It\'s Over" with skull emojis appears abruptly over the character\'s face during the zoom. The text is static and does not move or animate.\n3.  **Character:**\n    *   No Character Movement\n\n**Notes:**\n\n*   The zoom should be timed to coincide with the appearance of the kinetic text, creating a sense of emphasis.\n*   The skull emojis should be placed strategically around the text to enhance the visual impact.\n*   The modern interior should be detailed and visually appealing, but not distracting from the main focus on the character and the text.\n*   The shallow depth of field helps to isolate the character and create a sense of intimacy.\n*   The vibrant colors of the character\'s hair and clothing add visual interest and contrast to the cooler tones of the environment.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ') (Attempt 1)
+2026-01-26 17:48:13,656 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:14,572 - root - WARNING - Retrying decompose_visual_description due to OutputParserException('Invalid json output: ## Cinematic Deconstruction: Wi-Fi Montage\n\nThis breakdown dissects the "Wi-Fi Montage" shot into its core cinematic components, following the Trilogy of Motion: Static Inception, Kinetic Journey, and Final Resolution.\n\n**OVERALL INTENT:** To create a rapid-fire, visually engaging montage that conveys the universal reaction to the return of Wi-Fi across different generations.\n\n### 1. Gen Z - The Digital Native\n\n*   **FIRST FRAME (Inception):** Close-up on the face of a young adult with brightly colored hair. The face is softly lit from below by the cool, vibrant glow of a phone screen. The background is blurred, suggesting a shallow depth of field. Multiple piercings and trendy, oversized clothing are visible but slightly out of focus. The expression is one of anticipation, eyes wide and slightly unfocused.\n*   **MOTION (Kinetic Journey):**\n    *   **Zoom:** A rapid, subtle DIGITAL ZOOM IN on the eyes, intensifying the focus on the character\'s expression.\n    *   **Lens Flare:** A simulated lens flare briefly streaks across the screen as the phone screen brightens momentarily.\n*   **LAST FRAME (Resolution):** Extreme close-up on the character\'s eyes, now widened further with surprise and excitement. The phone screen\'s glow is more intense, casting brighter highlights on the face. The background blur remains consistent, keeping the focus solely on the reaction.\n\n### 2. Millennial - The Connected Professional\n\n*   **FIRST FRAME (Inception):** Medium close-up on the face of an adult in their late twenties to early forties. The face is lit from below by the bluish light of a phone screen, creating a subtle upward cast of shadows. The background is a blurred office environment, hinting at a professional setting. They are wearing a button-down shirt or blouse, and a smartwatch is visible on their wrist.\n*   **MOTION (Kinetic Journey):**\n    *   **Pan:** A quick, snappy PAN to the side, following the character\'s slight head turn as they glance at their phone screen.\n    *   **Bokeh Shift:** The blurred background elements shift slightly, creating a sense of movement and disorientation during the quick cut.\n*   **LAST FRAME (Resolution):** The character\'s head is slightly turned, and their eyes are now focused intently on the phone screen. The background blur remains consistent, maintaining the focus on the character\'s reaction.\n\n### 3. Gen X - The Pragmatic User\n\n*   **FIRST FRAME (Inception):** Medium close-up on the face of a middle-aged adult, typically in their forties to mid-fifties. The face is lit from below by the soft glow of a phone screen, creating subtle highlights and shadows. They are wearing comfortable clothing, such as jeans and a t-shirt, and may have reading glasses perched on their nose. A book is slightly visible in the background, hinting at their engagement in a different activity before the Wi-Fi\'s return.\n*   **MOTION (Kinetic Journey):**\n    *   **Tilt:** A rapid TILT DOWN, emphasizing the character\'s downward gaze towards their phone screen.\n    *   **Depth of Field Shift:** The depth of field subtly adjusts, bringing the phone screen into sharper focus as the character\'s attention shifts.\n*   **LAST FRAME (Resolution):** The character\'s gaze is fixed on the phone screen, and their expression shows a mix of surprise and relief. The background book is now slightly more blurred, indicating the shift in focus.\n\n### 4. Boomer - The Analog Convert\n\n*   **FIRST FRAME (Inception):** Medium close-up on the face of an older adult, typically in their late fifties and older. The face is lit from below by the faint glow of a phone screen, creating a gentle illumination. They are dressed in classic, slightly outdated clothing, such as a polo shirt or cardigan. A landline phone is partially visible in the background, representing their connection to older technology.\n*   **MOTION (Kinetic Journey):**\n    *   **Push In:** A smooth, controlled PUSH IN towards the character\'s face, intensifying the focus on their reaction.\n    *   **Color Shift:** The color temperature of the phone screen\'s glow subtly shifts towards a warmer tone, enhancing the sense of excitement.\n*   **LAST FRAME (Resolution):** The character\'s face is closer to the camera, and their expression is one of genuine surprise and delight. The background landline phone is now slightly out of focus, symbolizing their shift towards the digital world.\n\n### 5. Kinetic Text & Seamless Loop\n\n*   **"Wi-Fi is Back?!"**: The kinetic text appears dynamically over the faces, using a font that matches the generation\'s style. The text animates with a playful bounce or glitch effect, emphasizing the excitement.\n*   **Surprised Face Emojis**: The emojis appear alongside the text, adding a layer of visual humor and relatability.\n*   **Seamless Loop**: The final frame of the "Boomer" shot seamlessly transitions back to the flashing "NO Wi-Fi!" symbol, creating a continuous loop that reinforces the cyclical nature of the Wi-Fi connection.\n\nThis detailed breakdown provides a comprehensive guide for the VFX team to recreate the "Wi-Fi Montage" with precision and artistic intent, ensuring a visually engaging and relatable experience for the audience.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ') (Attempt 1)
+2026-01-26 17:48:14,575 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:15,008 - root - WARNING - Retrying decompose_visual_description due to OutputParserException('Invalid json output: ## Cinematic Deconstruction: Gen X "This Again?"\n\n**OVERALL SHOT GOAL:** A humorous tableau depicting generational frustration with technology, with Gen X remaining aloof amidst the chaos.\n\n**FIRST FRAME (Inception):**\n\n*   **Mise-en-scène:** A cozy living room bathed in warm, soft light emanating from a table lamp positioned to the left of the armchair. The armchair, upholstered in a muted earth-tone fabric, sits comfortably beside a tall bookshelf filled with neatly arranged books. The spines of the books are varied in color, adding visual texture. Seated in the armchair is a middle-aged adult (Gen X), clad in comfortable jeans and a t-shirt. They are calmly reading a hardcover book (Prop 3). Their silhouette is relaxed, shoulders slightly slumped forward in a posture of ease. The room should feel slightly cluttered, but in an organized, lived-in way.\n\n**LAST FRAME (Resolution):**\n\n*   **Mise-en-scène:** The living room is now a scene of controlled chaos. The middle-aged adult (Gen X) remains seated in the armchair, still engrossed in the hardcover book (Prop 3), their expression unchanged. The other characters (Gen Z, Millennial, and Boomer) are now in various states of technological distress. The young adult (Gen Z) is hunched over, staring intensely at a smartphone (Prop 4) displaying a loading icon. The adult (Millennial) is closer to the Router (Prop 1) frantically pressing the reset button. The older adult (Boomer) is holding a Landline Phone (Prop 2) with a bewildered expression. The Red Wi-Fi Symbol (Prop 0) is prominently displayed on a screen in the background, flashing insistently. The lighting remains warm but is now punctuated by the cool glow of the Phone Screens (Prop 4), casting contrasting shadows.\n\n**MOTION (Kinetic Journey):**\n\n1.  **The Static Core:** The middle-aged adult in comfortable clothing (Gen X) remains entirely still throughout the shot. This character is the anchor, the eye of the storm.\n2.  **The Frustrated Youth (Gen Z):** The young adult with brightly colored hair paces in a tight, agitated Vector Path near the edge of the frame. Their hands grip a smartphone (Prop 4) tightly. The screen\'s glow illuminates their face, highlighting their worried expression.\n3.  **The Tech-Savvy Scramble (Millennial):** The adult in casual work attire moves with hurried, precise gestures toward the Router (Prop 1). Their Vector Path is a direct line to the device. They frantically press the reset button, their brow furrowed in concentration.\n4.  **The Analog Anxiety (Boomer):** The older adult in classic clothing stumbles slightly as they clutch the Landline Phone (Prop 2). Their Vector Path is erratic and uncertain, a visual representation of their confusion.\n5.  **The Digital Declaration:** Kinetic text reading "Gen X: This Again?" appears above the middle-aged adult in comfortable clothing (Gen X), accompanied by an eye-roll emoji that animates briefly and fades. The text has a slightly retro, pixelated font, contrasting with the otherwise modern aesthetic.\n6.  **The Looming Loss:** The Red Wi-Fi Symbol (Prop 0) in the background flashes with increasing intensity, a visual representation of the escalating technological crisis.\n\n**CONTINUITY INHERITANCE:**\n\n*   The armchair and bookshelf remain in the same position and orientation from the First Frame to the Last Frame.\n*   The middle-aged adult in comfortable clothing (Gen X) maintains their seated position and continues reading the hardcover book (Prop 3) throughout the shot.\n*   The lighting maintains its warm tone, only slightly altered by the addition of the Phone Screens (Prop 4) in the Last Frame.\n*   The Red Wi-Fi Symbol (Prop 0) remains visible in the background throughout the shot, its flashing intensity increasing in the Last Frame.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ') (Attempt 1)
+2026-01-26 17:48:15,010 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:15,443 - root - WARNING - Retrying decompose_visual_description due to OutputParserException('Invalid json output: ## Trilogy of Motion: Millennial Deadline\n\n**SHOT TYPE:** Close-Up\n\n**FIRST FRAME (Inception):**\n\n*   **Mise-en-scène:** An office desk dominates the foreground, cluttered with papers and office supplies. A modern wireless router (Prop 1) sits center frame, its blinking LED lights casting a faint glow. The Millennial (adult in casual work attire) is positioned behind the desk, their hands hovering over the router. Sweat beads are visible on their forehead. The background is blurred, but a child\'s toy (unspecified) is vaguely discernible, adding a layer of domesticity to the office setting.\n*   **Lighting:** Primarily overhead fluorescent office lighting, harsh and unflattering. A slight shadow obscures the upper portion of the Millennial\'s face, emphasizing the stress.\n*   **Character Silhouette:** The Millennial is hunched over, their shoulders tense, creating a silhouette of desperation.\n\n**MOTION (Kinetic Journey):**\n\n*   The Millennial\'s hands move in rapid, repetitive motions, frantically mashing the reset button on the router (Prop 1). This action is the core of the shot\'s kinetic energy.\n*   Sweat droplets on the Millennial\'s face follow a downward vector path, becoming more pronounced as the shot progresses.\n*   Kinetic text "Millennial: DEADLINE!" appears abruptly above the Millennial\'s head, pulsating with a slight shake to convey urgency. Stressed face emojis bounce erratically around the text.\n*   Subtle handheld camera shake is introduced to amplify the feeling of anxiety and chaos.\n\n**LAST FRAME (Resolution):**\n\n*   **Mise-en-scène:** The office desk remains cluttered, but the router (Prop 1) now has a different set of LED lights illuminated, suggesting a change in status (e.g., rebooting). The child\'s toy in the background remains blurred but unchanged in position. The sweat droplets on the Millennial\'s face are now more numerous and pronounced.\n*   **Lighting:** The lighting remains consistent with the first frame, but the shadows on the Millennial\'s face might be slightly deeper, reflecting increased stress.\n*   **Character Silhouette:** The Millennial\'s posture is even more slumped than in the first frame, conveying exhaustion and defeat. Their hands are still positioned near the router, but their movements are slower and less frantic.\n*   The Kinetic text is now slightly larger and more distorted, emphasizing the overwhelming pressure. The stressed face emojis have multiplied and are scattered more chaotically around the text.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ') (Attempt 2)
+2026-01-26 17:48:15,445 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:17,304 - root - WARNING - Retrying decompose_visual_description due to OutputParserException('Invalid json output: ## Trilogy of Motion: Wi-Fi Apocalypse\n\n**DECONSTRUCTION:** This shot isolates the digital dread of a lost Wi-Fi signal, amplifying it through visual distortion and kinetic typography.\n\n**I. STATIC INCEPTION:**\n\n*   **Mise-en-scène:**\n    *   The frame is dominated by a digital red Wi-Fi symbol against a pure black void.\n    *   The symbol is a standard three-tiered curved signal icon.\n    *   Subtle texture is introduced through a simulated LED screen grain effect over the entire frame.\n    *   Initial lighting is non-existent, as the symbol itself is the sole light source.\n    *   Aspect Ratio: 16:9\n\n**II. KINETIC JOURNEY:**\n\n*   **Motion:**\n    *   The Red Wi-Fi Symbol:\n        *   Undergoes rapid, irregular scaling, oscillating between 90% and 110% of its original size.\n        *   Exhibits a jittering translational vector with an amplitude of 5 pixels in random directions.\n        *   A "glitch effect" is overlaid. This effect manifests as momentary horizontal shearing of the symbol, occurring at random intervals (0.2-0.5 seconds) and lasting for 2-3 frames each.\n    *   Kinetic Text Overlay:\n        *   The text "NO Wi-Fi!" materializes rapidly via a simulated digital distortion effect (pixelation and re-assembly).\n        *   The font is a bold, sans-serif typeface with sharp angles.\n        *   The text undergoes a constant, subtle shaking animation, with a rotational variance of +/- 3 degrees and a translational variance of +/- 4 pixels on both the X and Y axes.\n        *   Sad Face Emojis appear sequentially after the text "NO Wi-FI!", rising from the bottom of the frame and fading out as they reach the top.\n\n**III. FINAL RESOLUTION:**\n\n*   **Mise-en-scène:**\n    *   The Red Wi-Fi Symbol:\n        *   Remains centered, retaining the screen grain texture and red color.\n        *   The symbol\'s size and position reflect the cumulative effect of the scaling and jittering described in "Motion."\n        *   The "glitch effect" may be momentarily frozen on the symbol.\n    *   Kinetic Text Overlay:\n        *   The text "NO Wi-Fi!" is fully formed and legible, retaining its bold, sans-serif style.\n        *   The shaking animation continues subtly.\n    *   Sad Face Emojis:\n        *   A few Sad Face Emojis remain on the upper part of the frame.\n    *   The black background remains consistent.\n    *   Aspect Ratio: 16:9\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ') (Attempt 2)
+2026-01-26 17:48:17,307 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:18,925 - root - WARNING - Retrying decompose_visual_description due to OutputParserException('Invalid json output: Okay, here\'s the shot breakdown, designed for maximum clarity and visual impact, ready for a high-end VFX build.\n\n**SHOT:** Gen Z "Death Pose"\n\n**TRILOGY OF MOTION:**\n\n*   **FIRST FRAME (Inception):**\n\n    *   **Mise-en-scène:** A messy, modern interior. Dominant colors are neutral with pops of bright, clashing accents (think teal, hot pink, lime green). The beanbag chair is large, amorphous, and brightly colored (e.g., hot pink or electric blue).\n    *   **Lighting:** Soft, diffused light from a window *out of frame* to the left, creating soft shadows. An overhead practical fixture (modern pendant lamp) casts a warm pool of light on the beanbag chair.\n    *   **Character:** <Gen Z> is sprawled dramatically on the beanbag chair. The pose is exaggerated, almost theatrical – limbs splayed, back arched slightly. Eyes are closed. Brightly colored hair is fanned out on the beanbag. Trendy, oversized clothing (hoodie, graphic tee) is rumpled. A smartphone is clutched loosely in one hand, screen facing *down*. The overall impression is one of performative collapse.\n\n*   **MOTION (Kinetic Journey):**\n\n    *   **Camera:** Quick, sharp ZOOM IN on <Gen Z>\'s face. The zoom is aggressive, transitioning from a medium shot to a tight close-up on their face.\n    *   **Text:** As the camera zooms, kinetic text appears overlaid on the frame: "Gen Z: It\'s Over." The text is stylized in a sans-serif font with a slight digital glitch effect. The text animates in with a quick, bouncing motion.\n    *   **Emojis:** Immediately following the text, two skull emojis appear beside the text, scaling up quickly and then settling into place.\n\n*   **LAST FRAME (Resolution):**\n\n    *   **Mise-en-scène:** The messy, modern interior is now slightly blurred in the background due to the tight close-up. The overhead practical fixture is now more prominent in the out-of-focus background.\n    *   **Lighting:** The lighting is now focused primarily on <Gen Z>\'s face. The soft, diffused light highlights the contours of their face.\n    *   **Character:** <Gen Z>\'s face fills a significant portion of the frame. Eyes are still closed. The smartphone is still clutched in their hand, now slightly out of focus.\n    *   **Text & Emojis:** The kinetic text ("Gen Z: It\'s Over") and skull emojis remain overlaid on the frame, positioned to the side of <Gen Z>\'s face (either top-right or top-left, depending on composition). The text and emojis have a slight glow or bloom effect.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ') (Attempt 2)
+2026-01-26 17:48:18,927 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:48:22,574 - root - WARNING - Retrying decompose_visual_description due to OutputParserException('Invalid json output: ## Trilogy of Motion: Wi-Fi Apocalypse\n\n**DECONSTRUCTION:** This shot isolates the universal dread of Wi-Fi loss, amplifying it with visual distortion and kinetic typography.\n\n**I. STATIC INCEPTION (First Frame):**\n\n*   **Mise-en-scène:**\n    *   The frame is dominated by a digital red Wi-Fi symbol against a pure black background.\n    *   The symbol has sharp, clean lines, typical of modern UI design.\n    *   The red color is a vibrant, saturated hue, immediately grabbing attention.\n    *   Initial text overlay: The words "NO Wi-Fi!" are stacked on two lines, rendered in a bold, sans-serif font with a slightly distressed texture. The font color is a stark white.\n    *   Three sad face emojis are arranged below the text, each a simple yellow circle with black features.\n    *   Lighting is purely digital, emanating from the Wi-Fi symbol and text itself, casting no shadows.\n    *   Resolution: High resolution, aiming for a crisp, digital aesthetic.\n\n**II. KINETIC JOURNEY (Motion):**\n\n*   **Prop 0 (Red Wi-Fi Symbol):** Rapid, erratic flashing. The symbol pulsates in size, subtly scaling up and down. Introduce a "glitch effect" – momentary pixelation and fragmentation of the symbol\'s form.\n*   **Text Overlay ("NO Wi-Fi!"):** A pronounced "shaking animation." Each letter vibrates independently, creating a sense of instability and panic. The text also undergoes subtle color shifts, flickering between white and a slightly desaturated red.\n*   **Emojis:** The sad face emojis bounce gently, as if trembling with sorrow. Their expressions subtly morph, cycling through slightly different variations of sadness (e.g., mouth curvature changes).\n\n**III. FINAL RESOLUTION (Last Frame):**\n\n*   **Mise-en-scène:**\n    *   The red Wi-Fi symbol remains central, but its form is now more fragmented and distorted due to the accumulated "glitch effect." Pixels around the edges are scattered.\n    *   The flashing continues, but with a slightly reduced intensity, as if the signal is fading.\n    *   Text Overlay ("NO Wi-Fi!"): The shaking animation has caused a slight blurring of the text. The color is now predominantly desaturated red, with only hints of white remaining. The overall size of the text has increased slightly due to the shaking effect.\n    *   Emojis: The sad face emojis are positioned slightly lower in the frame, as if they have slumped from exhaustion. Their expressions are now more pronounced, with exaggerated frowns.\n    *   The black background remains pure, providing maximum contrast to the distressed elements in the foreground.\n    *   The digital lighting maintains its source from the Wi-Fi symbol and text, but with a dimmer intensity, reflecting the overall sense of despair.\n    *   Resolution: Retain high resolution, but introduce subtle chromatic aberration around the edges of the glitched Wi-Fi symbol and text to enhance the digital distortion effect.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE ') (Attempt 3)
+🔄 Resuming Viral 30-Second Short Pipeline...
+📝 Run ID: viral_shorts_20260126_222626_fc38fd78
+📝 Logs are being saved to: /Users/devashishbadlani/dev/ViMax/resume_viral_30s_short_20260126_174709.log
+✅ Found run directory in video folder: /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78
+✅ Found existing run directory: /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78
+✅ Loaded existing ideation: Gen Z vs. Boomer: Tech Problems!
+✅ Pipeline initialized with working_dir: /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78
+✅ Pipeline run_id: viral_shorts_20260126_222626_fc38fd78
+
+📋 Resume Configuration:
+   - Run ID: viral_shorts_20260126_222626_fc38fd78
+   - Working Directory: /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78
+   - Force Regenerate: False (will skip existing content)
+   - Target duration: 30 seconds
+   - Max shots: 5
+   - Platform: YouTube Shorts
+   - Image Generator: Unified (Gemini -> PiAPI -> KieAI)
+
+🎬 Resuming pipeline...
+
+🚀 Loaded story from existing file.
+🚀 Loaded 4 characters from existing file.
+🚀 All characters already have portraits, skipping portrait generation.
+🚀 Loaded script from existing file.
+🔍 Designing storyboard...
+✅ Designed storyboard and saved to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/storyboard.json.
+Traceback (most recent call last):
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/output_parsers/json.py", line 84, in parse_result
+    return parse_json_markdown(text)
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/utils/json.py", line 164, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/utils/json.py", line 194, in _parse_json
+    return parser(json_str)
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/utils/json.py", line 137, in parse_partial_json
+    return json.loads(s, strict=strict)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ~~~~~~~~~~~~~~~~^^^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/dev/ViMax/agents/producers/visuals/storyboard.py", line 376, in decompose_visual_description
+    decomposition: VisDescDecompositionResponse = await asyncio.wait_for(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3191, in ainvoke
+    input_ = await coro_with_context(part(), context, create_task=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/output_parsers/base.py", line 224, in ainvoke
+    return await self._acall_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 2109, in _acall_with_config
+    output: Output = await coro_with_context(coro, context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/output_parsers/base.py", line 285, in aparse_result
+    return await run_in_executor(None, self.parse_result, result, partial=partial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/runnables/config.py", line 610, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/runnables/config.py", line 601, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/output_parsers/pydantic.py", line 74, in parse_result
+    json_object = super().parse_result(result)
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/langchain_core/output_parsers/json.py", line 87, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: ## Trilogy of Motion: Wi-Fi Apocalypse
+
+**DECONSTRUCTION:** This shot isolates the universal dread of Wi-Fi loss, amplifying it with visual distortion and kinetic typography.
+
+**I. STATIC INCEPTION (First Frame):**
+
+*   **Mise-en-scène:**
+    *   The frame is dominated by a digital red Wi-Fi symbol against a pure black background.
+    *   The symbol has sharp, clean lines, typical of modern UI design.
+    *   The red color is a vibrant, saturated hue, immediately grabbing attention.
+    *   Initial text overlay: The words "NO Wi-Fi!" are stacked on two lines, rendered in a bold, sans-serif font with a slightly distressed texture. The font color is a stark white.
+    *   Three sad face emojis are arranged below the text, each a simple yellow circle with black features.
+    *   Lighting is purely digital, emanating from the Wi-Fi symbol and text itself, casting no shadows.
+    *   Resolution: High resolution, aiming for a crisp, digital aesthetic.
+
+**II. KINETIC JOURNEY (Motion):**
+
+*   **Prop 0 (Red Wi-Fi Symbol):** Rapid, erratic flashing. The symbol pulsates in size, subtly scaling up and down. Introduce a "glitch effect" – momentary pixelation and fragmentation of the symbol's form.
+*   **Text Overlay ("NO Wi-Fi!"):** A pronounced "shaking animation." Each letter vibrates independently, creating a sense of instability and panic. The text also undergoes subtle color shifts, flickering between white and a slightly desaturated red.
+*   **Emojis:** The sad face emojis bounce gently, as if trembling with sorrow. Their expressions subtly morph, cycling through slightly different variations of sadness (e.g., mouth curvature changes).
+
+**III. FINAL RESOLUTION (Last Frame):**
+
+*   **Mise-en-scène:**
+    *   The red Wi-Fi symbol remains central, but its form is now more fragmented and distorted due to the accumulated "glitch effect." Pixels around the edges are scattered.
+    *   The flashing continues, but with a slightly reduced intensity, as if the signal is fading.
+    *   Text Overlay ("NO Wi-Fi!"): The shaking animation has caused a slight blurring of the text. The color is now predominantly desaturated red, with only hints of white remaining. The overall size of the text has increased slightly due to the shaking effect.
+    *   Emojis: The sad face emojis are positioned slightly lower in the frame, as if they have slumped from exhaustion. Their expressions are now more pronounced, with exaggerated frowns.
+    *   The black background remains pure, providing maximum contrast to the distressed elements in the foreground.
+    *   The digital lighting maintains its source from the Wi-Fi symbol and text, but with a dimmer intensity, reflecting the overall sense of despair.
+    *   Resolution: Retain high resolution, but introduce subtle chromatic aberration around the edges of the glitched Wi-Fi symbol and text to enhance the digital distortion effect.
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/devashishbadlani/dev/ViMax/resume_viral_30s_short.py", line 168, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/devashishbadlani/dev/ViMax/resume_viral_30s_short.py", line 137, in main
+    result = await pipeline(
+             ^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/dev/ViMax/pipelines/social/shorts.py", line 235, in __call__
+    video_output = await self.video_pipeline(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/dev/ViMax/pipelines/base/idea.py", line 680, in __call__
+    final_video_path = await script2video_pipeline(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/dev/ViMax/pipelines/base/script.py", line 461, in __call__
+    shot_descriptions = await self.decompose_visual_descriptions(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/dev/ViMax/pipelines/base/script.py", line 1483, in decompose_visual_descriptions
+    shot_descriptions = await asyncio.gather(*tasks)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/dev/ViMax/pipelines/base/script.py", line 1506, in decompose_visual_description_for_single_shot_brief_description
+    shot_description = await self.storyboard_artist.decompose_visual_description(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/Users/devashishbadlani/dev/ViMax/.venv/lib/python3.13/site-packages/tenacity/__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1595b5cd0 state=finished raised OutputParserException>]

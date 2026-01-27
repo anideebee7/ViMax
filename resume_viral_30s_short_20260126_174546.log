@@ -1,0 +1,107 @@
+2026-01-26 17:45:47,107 - utils.pipeline.generator_factory - INFO - Image generator rate limiting: 10 req/min, 500 req/day
+2026-01-26 17:45:47,107 - utils.pipeline.generator_factory - INFO - Video generator rate limiting: 2 req/min
+2026-01-26 17:45:47,107 - utils.pipeline.generator_factory - INFO - Creating unified generators with fallback chains...
+2026-01-26 17:45:47,107 - utils.pipeline.generator_factory - INFO -   Gemini API: ✓
+2026-01-26 17:45:47,107 - utils.pipeline.generator_factory - INFO -   PiAPI: ✓
+2026-01-26 17:45:47,107 - utils.pipeline.generator_factory - INFO -   KieAI: ✓
+2026-01-26 17:45:47,107 - tools.generators.factory - INFO - UnifiedImageGenerator initialized with model=nano-banana-pro
+2026-01-26 17:45:47,107 - tools.generators.factory - INFO -   Gemini API: ✓
+2026-01-26 17:45:47,107 - tools.generators.factory - INFO -   PiAPI: ✓
+2026-01-26 17:45:47,107 - tools.generators.factory - INFO -   KieAI: ✓
+2026-01-26 17:45:47,107 - tools.generators.factory - INFO - UnifiedVideoGenerator initialized
+2026-01-26 17:45:47,107 - tools.generators.factory - INFO -   KieAI (veo3_fast): ✓
+2026-01-26 17:45:47,107 - tools.generators.factory - INFO -   PiAPI (veo3.1): ✓
+2026-01-26 17:45:47,107 - tools.generators.factory - INFO -   Google (veo-3.1): ✓
+2026-01-26 17:45:47,108 - pipelines.social.shorts - INFO - Writing viral-optimized script...
+2026-01-26 17:45:47,109 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:45:50,322 - pipelines.social.shorts - INFO - Creating viral visual brief...
+2026-01-26 17:45:50,323 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:45:54,252 - pipelines.social.shorts - INFO - Initiating video production...
+2026-01-26 17:46:13,569 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:46:15,736 - pipelines.base.script - INFO - Registered character portrait for compositing: Millennial -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/1_Millennial/front.png
+2026-01-26 17:46:15,736 - pipelines.base.script - INFO - Registered character portrait for compositing: Boomer -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/3_Boomer/front.png
+2026-01-26 17:46:15,736 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen Z -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/0_Gen Z/front.png
+2026-01-26 17:46:15,736 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen X -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/2_Gen X/front.png
+2026-01-26 17:46:15,736 - pipelines.base.script - INFO - Character compositing enabled for 4 characters
+2026-01-26 17:46:15,736 - pipelines.base.script - INFO - Starting Script2VideoPipeline execution...
+2026-01-26 17:46:35,033 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:46:37,474 - pipelines.base.script - INFO - Generating prop references for 3 props...
+2026-01-26 17:46:37,474 - PropReferenceGenerator - INFO - Prop reference already exists for Red Wi-Fi Symbol, skipping generation.
+2026-01-26 17:46:37,474 - PropReferenceGenerator - INFO - Prop reference already exists for Router, skipping generation.
+2026-01-26 17:46:37,475 - PropReferenceGenerator - INFO - Prop reference already exists for Landline Phone, skipping generation.
+2026-01-26 17:46:37,475 - pipelines.base.script - INFO - Prop reference generation completed for 3 props.
+2026-01-26 17:46:37,475 - pipelines.base.script - INFO - Registered character portrait for compositing: Millennial -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/1_Millennial/front.png
+2026-01-26 17:46:37,475 - pipelines.base.script - INFO - Registered character portrait for compositing: Boomer -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/3_Boomer/front.png
+2026-01-26 17:46:37,475 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen Z -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/0_Gen Z/front.png
+2026-01-26 17:46:37,475 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen X -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/2_Gen X/front.png
+2026-01-26 17:46:37,475 - pipelines.base.script - INFO - Character compositing enabled for 4 characters
+2026-01-26 17:46:37,475 - pipelines.base.script - INFO - Creating director brief for storyboard/cinematography...
+2026-01-26 17:46:37,476 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:46:39,385 - pipelines.base.script - INFO - Director brief created successfully.
+2026-01-26 17:46:39,388 - pipelines.base.script - INFO - Designing storyboard from script...
+🔄 Resuming Viral 30-Second Short Pipeline...
+📝 Run ID: viral_shorts_20260126_222626_fc38fd78
+📝 Logs are being saved to: /Users/devashishbadlani/dev/ViMax/resume_viral_30s_short_20260126_174547.log
+✅ Found run directory in video folder: /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78
+✅ Found existing run directory: /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78
+✅ Loaded existing ideation: Gen Z vs. Boomer: Tech Problems!
+✅ Pipeline initialized with working_dir: /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78
+✅ Pipeline run_id: viral_shorts_20260126_222626_fc38fd78
+
+📋 Resume Configuration:
+   - Run ID: viral_shorts_20260126_222626_fc38fd78
+   - Working Directory: /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78
+   - Force Regenerate: False (will skip existing content)
+   - Target duration: 30 seconds
+   - Max shots: 5
+   - Platform: YouTube Shorts
+   - Image Generator: Unified (Gemini -> PiAPI -> KieAI)
+
+🎬 Resuming pipeline...
+
+🚀 Loaded story from existing file.
+🚀 Loaded 4 characters from existing file.
+🚀 All characters already have portraits, skipping portrait generation.
+🚀 Loaded script from existing file.
+Traceback (most recent call last):
+  File "/Users/devashishbadlani/dev/ViMax/resume_viral_30s_short.py", line 168, in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/devashishbadlani/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/devashishbadlani/dev/ViMax/resume_viral_30s_short.py", line 137, in main
+    result = await pipeline(
+             ^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/dev/ViMax/pipelines/social/shorts.py", line 235, in __call__
+    video_output = await self.video_pipeline(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/dev/ViMax/pipelines/base/idea.py", line 680, in __call__
+    final_video_path = await script2video_pipeline(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/Users/devashishbadlani/dev/ViMax/pipelines/base/script.py", line 442, in __call__
+    storyboard = await self.design_storyboard(
+                       ~~~~~~~~~~~~~~~~~~~~~~^
+        script=script,
+        ^^^^^^^^^^^^^^
+    ...<3 lines>...
+        user_requirement=effective_user_requirement,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+TypeError: Script2VideoPipeline.design_storyboard() got an unexpected keyword argument 'props'

@@ -1,0 +1,82 @@
+# Content Planner Configuration
+# Weekly health content planning workflow
+
+# Data Source API Keys
+data_sources:
+  google_trends:
+    # No API key needed for RSS feed
+    enabled: true
+  
+  youtube:
+    # Get your API key from: https://console.cloud.google.com/apis/credentials
+    # Enable YouTube Data API v3 in Google Cloud Console
+    api_key: <YOUR_YOUTUBE_API_KEY>
+    enabled: true
+    max_results: 25
+  
+  newsapi:
+    # Get your API key from: https://newsapi.org/register
+    api_key: <YOUR_NEWSAPI_KEY>
+    enabled: true
+    page_size: 50
+  
+  reddit:
+    # No API key needed (uses public JSON API)
+    enabled: true
+    subreddits:
+      - nutrition
+      - Fitness
+      - Biohackers
+      - Supplements
+      - Longevity
+      - loseit
+    limit: 25
+
+# Content Planner Settings
+planner:
+  top_n_clusters: 10
+  num_calendar_days: 7
+  shorts_per_day: 2
+  long_form_count: 2
+
+# Rate Limiting (optional)
+rate_limiting:
+  google_trends:
+    max_requests_per_minute: 10
+    max_requests_per_day: 100
+  youtube:
+    max_requests_per_minute: 5
+    max_requests_per_day: 100
+  newsapi:
+    max_requests_per_minute: 5
+    max_requests_per_day: 100
+  reddit:
+    max_requests_per_minute: 10
+    max_requests_per_day: 500
+
+# Output Settings
+output:
+  # Output directory for saved results
+  working_dir: .working_dir/content_planner
+  
+  # Output formats to generate
+  formats:
+    json: true
+    markdown: true
+    email: false
+    google_sheets: false
+    slack: false
+  
+  # Email settings (if email output enabled)
+  email:
+    to: ""
+    subject: "Weekly Content Plan - IntelliVerse Health"
+  
+  # Google Sheets settings (if enabled)
+  google_sheets:
+    spreadsheet_id: ""
+    worksheet_name: "Weekly Plans"
+  
+  # Slack settings (if enabled)
+  slack:
+    webhook_url: ""

@@ -1,0 +1,50 @@
+# Idea to Short Movie Video Pipeline Configuration
+# End-to-end pipeline: idea → script → storyboard → video
+
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 200
+
+# Image generator for storyboard frames
+image_generator:
+  module: tools.generators.image.kieai
+  class: KieAIImageGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+
+# Video generator for scene videos
+video_generator:
+  module: tools.generators.video.kieai
+  class: KieAIVideoGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+
+# Trend analyzer for film trends (optional)
+trend_analyzer:
+  google_trends:
+    enabled: true
+  youtube_trends:
+    enabled: true
+    api_key: ${YOUTUBE_API_KEY}
+  reddit:
+    enabled: true
+    subreddits:
+      - Filmmakers
+      - Screenwriting
+      - shortfilm
+  newsapi:
+    enabled: false
+
+working_dir: .working_dir/shortmovie_video
+force_regenerate: false
+
+# Optional: character portrait overrides (S3 URLs or local paths)
+character_portrait_overrides: {}
+
+# Optional: global reference images for consistent style
+global_reference_images: []

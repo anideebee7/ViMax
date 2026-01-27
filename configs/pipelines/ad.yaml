@@ -1,0 +1,40 @@
+# Idea to Ad Pipeline Configuration
+
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 200
+
+image_generator:
+  class_path: tools.KieAIImageGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+  max_requests_per_minute: 20
+
+video_generator:
+  class_path: tools.KieAIVideoGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+  max_requests_per_minute: 10
+
+# Optional: Enable trend analysis
+trend_analyzer:
+  google_trends:
+    enabled: true
+  youtube_trends:
+    enabled: false
+  reddit:
+    enabled: true
+    subreddits:
+      - advertising
+      - marketing
+      - socialmedia
+  newsapi:
+    enabled: false
+
+working_dir: .working_dir/ad
+force_regenerate: false

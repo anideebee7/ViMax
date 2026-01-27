@@ -1,0 +1,28 @@
+# Idea to Lyrics Pipeline Configuration
+
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 200
+
+# Optional: Enable trend analysis for trendy flag
+trend_analyzer:
+  google_trends:
+    enabled: true
+  youtube_trends:
+    enabled: true
+    api_key: ${YOUTUBE_API_KEY}
+  reddit:
+    enabled: true
+    subreddits:
+      - music
+      - songwriting
+      - WeAreTheMusicMakers
+  newsapi:
+    enabled: false
+    api_key: ${NEWSAPI_KEY}
+
+working_dir: .working_dir/lyrics
+force_regenerate: false

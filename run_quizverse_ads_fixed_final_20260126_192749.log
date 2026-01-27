@@ -1,0 +1,152 @@
+2026-01-26 19:27:49,281 - __main__ - INFO - ======================================================================
+2026-01-26 19:27:49,281 - __main__ - INFO - QUIZVERSE AD CAMPAIGN GENERATION
+2026-01-26 19:27:49,281 - __main__ - INFO - Started at: 2026-01-26 19:27:49
+2026-01-26 19:27:49,281 - __main__ - INFO - ======================================================================
+2026-01-26 19:27:49,281 - __main__ - INFO - 
+2026-01-26 19:27:49,281 - __main__ - INFO - Running both Ad Banners and Ad Video pipelines for QuizVerse
+2026-01-26 19:27:49,281 - __main__ - INFO - with Autocurio character for brand consistency
+2026-01-26 19:27:49,281 - __main__ - INFO - 
+2026-01-26 19:27:49,908 - __main__ - INFO - ======================================================================
+2026-01-26 19:27:49,908 - __main__ - INFO - STARTING AD BANNERS PIPELINE
+2026-01-26 19:27:49,908 - __main__ - INFO - ======================================================================
+2026-01-26 19:27:49,961 - utils.pipeline.generator_factory - INFO - Image generator rate limiting: 20 req/min
+2026-01-26 19:27:49,961 - utils.pipeline.generator_factory - INFO - Creating unified generators with fallback chains...
+2026-01-26 19:27:49,961 - utils.pipeline.generator_factory - INFO -   Gemini API: ✓
+2026-01-26 19:27:49,961 - utils.pipeline.generator_factory - INFO -   PiAPI: ✓
+2026-01-26 19:27:49,961 - utils.pipeline.generator_factory - INFO -   KieAI: ✓
+2026-01-26 19:27:49,961 - tools.generators.factory - INFO - UnifiedImageGenerator initialized with model=nano-banana-pro
+2026-01-26 19:27:49,961 - tools.generators.factory - INFO -   Gemini API: ✓
+2026-01-26 19:27:49,961 - tools.generators.factory - INFO -   PiAPI: ✓
+2026-01-26 19:27:49,961 - tools.generators.factory - INFO -   KieAI: ✓
+2026-01-26 19:27:49,961 - tools.generators.factory - INFO - UnifiedVideoGenerator initialized
+2026-01-26 19:27:49,961 - tools.generators.factory - INFO -   KieAI (veo3_fast): ✓
+2026-01-26 19:27:49,961 - tools.generators.factory - INFO -   PiAPI (veo3.1): ✓
+2026-01-26 19:27:49,961 - tools.generators.factory - INFO -   Google (veo-3.1): ✓
+2026-01-26 19:28:01,790 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/character_sheet.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/character_sheet.png
+2026-01-26 19:28:01,795 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2026-01-26 19:28:02,678 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/character_sheet.png
+2026-01-26 19:28:02,678 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/front_neutral.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/front_neutral.png
+2026-01-26 19:28:03,396 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/front_neutral.png
+2026-01-26 19:28:03,396 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/front_happy.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/front_happy.png
+2026-01-26 19:28:04,000 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/front_happy.png
+2026-01-26 19:28:04,000 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/front_sad.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/front_sad.png
+2026-01-26 19:28:04,652 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/front_sad.png
+2026-01-26 19:28:04,653 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/side_neutral.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/side_neutral.png
+2026-01-26 19:28:05,248 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/side_neutral.png
+2026-01-26 19:28:05,249 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/side_happy.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/side_happy.png
+2026-01-26 19:28:05,822 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/side_happy.png
+2026-01-26 19:28:05,822 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/side_sad.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/side_sad.png
+2026-01-26 19:28:06,415 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/side_sad.png
+2026-01-26 19:28:06,415 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/back_neutral.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/back_neutral.png
+2026-01-26 19:28:07,021 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/back_neutral.png
+2026-01-26 19:28:07,022 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/back_happy.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/back_happy.png
+2026-01-26 19:28:07,633 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/back_happy.png
+2026-01-26 19:28:07,634 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/Characters/autocurio/back_sad.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/back_sad.png
+2026-01-26 19:28:08,219 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/s3_characters/autocurio/back_sad.png
+2026-01-26 19:28:08,220 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/brands/intelli-verse-x/logo.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/brand_assets/brand_logo.png
+2026-01-26 19:28:08,432 - root - WARNING - S3 download failed for s3://intelli-verse-x-media/agent-assets/brands/intelli-verse-x/logo.png: An error occurred (404) when calling the HeadObject operation: Not Found
+2026-01-26 19:28:08,664 - root - ERROR - Error downloading image: 404 Client Error: Not Found for url: https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/brands/intelli-verse-x/logo.png
+2026-01-26 19:28:08,664 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/brands/intelli-verse-x/Logo.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/brand_assets/brand_logo.png
+2026-01-26 19:28:09,095 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/brand_assets/brand_logo.png
+2026-01-26 19:28:09,095 - root - INFO - Downloading image from https://intelli-verse-x-media.s3.us-east-1.amazonaws.com/agent-assets/games/quiz-verse/icon.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/brand_assets/game_icon.png
+2026-01-26 19:28:09,583 - root - INFO - Image downloaded successfully from S3 to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/brand_assets/game_icon.png
+2026-01-26 19:28:09,584 - pipelines.ads.banners - INFO - Character portraits available for banners: ['autocurio']
+2026-01-26 19:28:09,585 - tools.fetchers.google_trends - INFO - Fetching Google Trends RSS feed...
+2026-01-26 19:28:09,587 - tools.fetchers.reddit - INFO - Fetching from 4 subreddits: advertising, marketing, gamedev, MobileGaming
+2026-01-26 19:28:09,587 - tools.fetchers.reddit - INFO - Fetching hot posts from r/advertising...
+2026-01-26 19:28:09,588 - tools.fetchers.reddit - INFO - Fetching hot posts from r/marketing...
+2026-01-26 19:28:09,588 - tools.fetchers.reddit - INFO - Fetching hot posts from r/gamedev...
+2026-01-26 19:28:09,588 - tools.fetchers.reddit - INFO - Fetching hot posts from r/MobileGaming...
+2026-01-26 19:28:09,697 - tools.fetchers.google_trends - INFO - Fetched 10 trending topics from Google Trends
+2026-01-26 19:28:10,411 - tools.fetchers.reddit - INFO - Fetched 25 posts from r/marketing
+2026-01-26 19:28:10,554 - tools.fetchers.reddit - INFO - Fetched 25 posts from r/gamedev
+2026-01-26 19:28:10,568 - tools.fetchers.reddit - INFO - Fetched 25 posts from r/MobileGaming
+2026-01-26 19:28:10,576 - tools.fetchers.reddit - INFO - Fetched 25 posts from r/advertising
+2026-01-26 19:28:10,578 - tools.fetchers.reddit - INFO - Total fetched: 100 posts from all subreddits
+2026-01-26 19:28:10,581 - pipelines.ads.banners - INFO - Running AdBannerIdeator...
+2026-01-26 19:28:10,585 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:28:18,830 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 19:28:18,830 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:28:18,834 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:28:19,134 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 1)
+2026-01-26 19:28:19,139 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:28:21,832 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:28:22,085 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 2)
+2026-01-26 19:28:22,087 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:28:24,834 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:28:25,571 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 3)
+2026-01-26 19:28:25,573 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x11eff3550 state=finished raised ClientError>]
+2026-01-26 19:28:25,573 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 19:28:27,833 - tools.generators.image.piapi - INFO - Uploading reference image: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/brand_assets/game_icon.png
+2026-01-26 19:28:29,529 - tools.generators.image.piapi - WARNING - Model nano-banana-pro might not support reference images. Passing anyway.
+2026-01-26 19:28:29,529 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 19:28:31,203 - tools.generators.image.piapi - INFO - Image task created: 3c2565ad-1f57-43dc-9ad2-fac10d79f798
+2026-01-26 19:29:18,863 - tools.generators.image.piapi - INFO - Image generated: https://img.theapi.app/ephemeral/c5a79997-b3aa-45a3-b6fe-941a71844c68.png...
+2026-01-26 19:29:18,863 - root - INFO - Downloading image from https://img.theapi.app/ephemeral/c5a79997-b3aa-45a3-b6fe-941a71844c68.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/raw_medium_rectangle.png
+2026-01-26 19:29:19,509 - root - INFO - Image downloaded successfully via HTTP to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/raw_medium_rectangle.png
+2026-01-26 19:29:19,598 - root - INFO - Removed solid background (detected color: (253, 253, 252), light_bg: True)
+2026-01-26 19:29:19,605 - root - INFO - Composited character onto image: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/medium_rectangle_300x250.png
+2026-01-26 19:29:19,612 - root - INFO - Removed solid background (detected color: (99, 55, 200), light_bg: False)
+2026-01-26 19:29:19,617 - root - INFO - Composited logo onto image at top-left: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/medium_rectangle_300x250.png
+2026-01-26 19:29:19,617 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 19:29:19,617 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:29:19,617 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:29:19,939 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 1)
+2026-01-26 19:29:19,941 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:29:22,618 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:29:22,865 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 2)
+2026-01-26 19:29:22,866 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:29:25,621 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:29:25,898 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 3)
+2026-01-26 19:29:25,899 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x11eff36d0 state=finished raised ClientError>]
+2026-01-26 19:29:25,899 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 19:29:28,621 - tools.generators.image.piapi - INFO - Uploading reference image: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/brand_assets/game_icon.png
+2026-01-26 19:29:30,234 - tools.generators.image.piapi - WARNING - Model nano-banana-pro might not support reference images. Passing anyway.
+2026-01-26 19:29:30,234 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 19:29:30,678 - tools.generators.image.piapi - INFO - Image task created: 7ed86937-4784-49fe-9fa7-291bf30bb09d
+2026-01-26 19:30:03,361 - tools.generators.image.piapi - INFO - Image generated: https://img.theapi.app/ephemeral/42578649-2765-43c1-a5f7-468a4c7e2617.png...
+2026-01-26 19:30:03,361 - root - INFO - Downloading image from https://img.theapi.app/ephemeral/42578649-2765-43c1-a5f7-468a4c7e2617.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/raw_leaderboard.png
+2026-01-26 19:30:04,015 - root - INFO - Image downloaded successfully via HTTP to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/raw_leaderboard.png
+2026-01-26 19:30:04,093 - root - INFO - Removed solid background (detected color: (253, 253, 252), light_bg: True)
+2026-01-26 19:30:04,099 - root - INFO - Composited character onto image: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/leaderboard_728x90.png
+2026-01-26 19:30:04,105 - root - INFO - Removed solid background (detected color: (99, 55, 200), light_bg: False)
+2026-01-26 19:30:04,109 - root - INFO - Composited logo onto image at top-left: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/leaderboard_728x90.png
+2026-01-26 19:30:04,109 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 19:30:04,109 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:30:04,110 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:30:04,416 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 1)
+2026-01-26 19:30:04,418 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:30:07,111 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:30:07,366 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 2)
+2026-01-26 19:30:07,368 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:30:10,113 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:30:10,327 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 3)
+2026-01-26 19:30:10,329 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x11efd84d0 state=finished raised ClientError>]
+2026-01-26 19:30:10,329 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 19:30:13,113 - tools.generators.image.piapi - INFO - Uploading reference image: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/brand_assets/game_icon.png
+2026-01-26 19:30:14,234 - tools.generators.image.piapi - WARNING - Model nano-banana-pro might not support reference images. Passing anyway.
+2026-01-26 19:30:14,234 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 19:30:15,957 - tools.generators.image.piapi - INFO - Image task created: 05707408-be29-4db4-bf3c-fd5728a232b8
+2026-01-26 19:30:49,136 - tools.generators.image.piapi - INFO - Image generated: https://img.theapi.app/ephemeral/dc4d9f55-dbfc-4e12-97e5-9e54cdbf95ff.png...
+2026-01-26 19:30:49,136 - root - INFO - Downloading image from https://img.theapi.app/ephemeral/dc4d9f55-dbfc-4e12-97e5-9e54cdbf95ff.png to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/raw_facebook_landscape.png
+2026-01-26 19:30:49,519 - root - INFO - Image downloaded successfully via HTTP to /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/raw_facebook_landscape.png
+2026-01-26 19:30:49,645 - root - INFO - Removed solid background (detected color: (253, 253, 252), light_bg: True)
+2026-01-26 19:30:49,693 - root - INFO - Composited character onto image: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/facebook_landscape_1200x628.png
+2026-01-26 19:30:49,708 - root - INFO - Removed solid background (detected color: (99, 55, 200), light_bg: False)
+2026-01-26 19:30:49,754 - root - INFO - Composited logo onto image at top-left: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/banners/high_converting/facebook_landscape_1200x628.png
+2026-01-26 19:30:49,754 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 19:30:49,754 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:30:49,754 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:30:50,060 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 1)
+2026-01-26 19:30:50,062 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:30:52,755 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:30:52,996 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 2)
+2026-01-26 19:30:52,997 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 19:30:55,756 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 19:30:56,027 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 3)
+2026-01-26 19:30:56,028 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x11efdb2d0 state=finished raised ClientError>]
+2026-01-26 19:30:56,029 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 19:30:58,757 - tools.generators.image.piapi - INFO - Uploading reference image: /Users/devashishbadlani/dev/ViMax/.working_dir/adbanners/ad_banners_20260127_012749_def95ff8/brand_assets/game_icon.png
+2026-01-26 19:30:59,829 - tools.generators.image.piapi - WARNING - Model nano-banana-pro might not support reference images. Passing anyway.
+2026-01-26 19:30:59,829 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 19:31:00,282 - tools.generators.image.piapi - INFO - Image task created: 12b26942-fbba-4967-8d8e-18b2bd1950f0

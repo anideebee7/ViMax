@@ -1,0 +1,12 @@
+# Non-sensitive config. Replace for your env.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vimax-api-config
+  namespace: vimax
+data:
+  API_HOST: "0.0.0.0"
+  API_PORT: "8000"
+  AWS_REGION: "us-east-1"
+  AWS_S3_BUCKET_NAME: "intelli-verse-x-media"
+  S3_ASSET_PREFIX: "agent-assets"

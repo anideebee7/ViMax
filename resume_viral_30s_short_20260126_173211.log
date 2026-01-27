@@ -1,0 +1,122 @@
+2026-01-26 17:32:11,186 - utils.pipeline.generator_factory - INFO - Image generator rate limiting: 10 req/min, 500 req/day
+2026-01-26 17:32:11,186 - utils.pipeline.generator_factory - INFO - Video generator rate limiting: 2 req/min
+2026-01-26 17:32:11,186 - utils.pipeline.generator_factory - INFO - Creating unified generators with fallback chains...
+2026-01-26 17:32:11,186 - utils.pipeline.generator_factory - INFO -   Gemini API: ✓
+2026-01-26 17:32:11,186 - utils.pipeline.generator_factory - INFO -   PiAPI: ✓
+2026-01-26 17:32:11,186 - utils.pipeline.generator_factory - INFO -   KieAI: ✓
+2026-01-26 17:32:11,186 - tools.generators.factory - INFO - UnifiedImageGenerator initialized with model=nano-banana-pro
+2026-01-26 17:32:11,186 - tools.generators.factory - INFO -   Gemini API: ✓
+2026-01-26 17:32:11,186 - tools.generators.factory - INFO -   PiAPI: ✓
+2026-01-26 17:32:11,186 - tools.generators.factory - INFO -   KieAI: ✓
+2026-01-26 17:32:11,186 - tools.generators.factory - INFO - UnifiedVideoGenerator initialized
+2026-01-26 17:32:11,186 - tools.generators.factory - INFO -   KieAI (veo3_fast): ✓
+2026-01-26 17:32:11,186 - tools.generators.factory - INFO -   PiAPI (veo3.1): ✓
+2026-01-26 17:32:11,186 - tools.generators.factory - INFO -   Google (veo-3.1): ✓
+2026-01-26 17:32:11,187 - pipelines.social.shorts - INFO - Writing viral-optimized script...
+2026-01-26 17:32:11,188 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:32:14,514 - pipelines.social.shorts - INFO - Creating viral visual brief...
+2026-01-26 17:32:14,515 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:32:18,680 - pipelines.social.shorts - INFO - Initiating video production...
+2026-01-26 17:32:37,414 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:32:39,947 - pipelines.base.script - INFO - Registered character portrait for compositing: Millennial -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/1_Millennial/front.png
+2026-01-26 17:32:39,947 - pipelines.base.script - INFO - Registered character portrait for compositing: Boomer -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/3_Boomer/front.png
+2026-01-26 17:32:39,948 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen Z -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/0_Gen Z/front.png
+2026-01-26 17:32:39,948 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen X -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/2_Gen X/front.png
+2026-01-26 17:32:39,948 - pipelines.base.script - INFO - Character compositing enabled for 4 characters
+2026-01-26 17:32:58,825 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:33:02,445 - PropReferenceGenerator - INFO - Generating visual reference for prop: Red Wi-Fi Symbol
+2026-01-26 17:33:02,484 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 17:33:02,484 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:33:02,484 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:33:02,544 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 1)
+2026-01-26 17:33:02,549 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:33:08,485 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:33:08,508 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 2)
+2026-01-26 17:33:08,509 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:33:14,485 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:33:14,518 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 3)
+2026-01-26 17:33:14,519 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x128b84750 state=finished raised ClientError>]
+2026-01-26 17:33:14,519 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 17:33:20,486 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 17:33:21,115 - tools.generators.image.piapi - INFO - Image task created: 92827230-3373-4003-910b-d8bd85d8a54e
+2026-01-26 17:33:54,119 - tools.generators.image.piapi - INFO - Image generated: https://img.theapi.app/ephemeral/2f7bc5b3-80e2-4ebd-99e6-8092a51fb468.png...
+2026-01-26 17:33:54,120 - root - INFO - Downloading image from https://img.theapi.app/ephemeral/2f7bc5b3-80e2-4ebd-99e6-8092a51fb468.png to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_red_wi-fi_symbol.png
+2026-01-26 17:33:54,836 - root - INFO - Image downloaded successfully via HTTP to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_red_wi-fi_symbol.png
+2026-01-26 17:33:54,838 - PropReferenceGenerator - INFO - Generating visual reference for prop: Router
+2026-01-26 17:33:54,838 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 17:33:54,838 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:33:54,838 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:33:54,902 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 1)
+2026-01-26 17:33:54,903 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:34:00,840 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:34:00,862 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 2)
+2026-01-26 17:34:00,863 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:34:06,841 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:34:06,865 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 3)
+2026-01-26 17:34:06,866 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x11e05ede0 state=finished raised ClientError>]
+2026-01-26 17:34:06,866 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 17:34:12,842 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 17:34:13,307 - tools.generators.image.piapi - INFO - Image task created: ef399627-1a75-4af6-a946-860e5c5b93a3
+2026-01-26 17:34:31,809 - tools.generators.image.piapi - INFO - Image generated: https://img.theapi.app/ephemeral/5bcafcbc-7850-4aa1-94a5-52e763e76719.png...
+2026-01-26 17:34:31,810 - root - INFO - Downloading image from https://img.theapi.app/ephemeral/5bcafcbc-7850-4aa1-94a5-52e763e76719.png to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_router.png
+2026-01-26 17:34:32,612 - root - INFO - Image downloaded successfully via HTTP to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_router.png
+2026-01-26 17:34:32,616 - PropReferenceGenerator - INFO - Generating visual reference for prop: Landline Phone
+2026-01-26 17:34:32,616 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 17:34:32,617 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:34:32,617 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:34:32,673 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 1)
+2026-01-26 17:34:32,674 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:34:38,619 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:34:38,647 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 2)
+2026-01-26 17:34:38,648 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:34:44,620 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:34:44,663 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 3)
+2026-01-26 17:34:44,666 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x128b9d850 state=finished raised ClientError>]
+2026-01-26 17:34:44,666 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 17:34:50,621 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 17:34:51,474 - tools.generators.image.piapi - INFO - Image task created: cd56f4b3-afbb-4714-8307-6c7d321030cd
+2026-01-26 17:35:24,845 - tools.generators.image.piapi - INFO - Image generated: https://img.theapi.app/ephemeral/e98ddfa4-d14a-48bd-ab31-70f447289f7b.png...
+2026-01-26 17:35:24,845 - root - INFO - Downloading image from https://img.theapi.app/ephemeral/e98ddfa4-d14a-48bd-ab31-70f447289f7b.png to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_landline_phone.png
+2026-01-26 17:35:25,494 - root - INFO - Image downloaded successfully via HTTP to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_landline_phone.png
+2026-01-26 17:35:25,495 - PropReferenceGenerator - INFO - Generating visual reference for prop: Book
+2026-01-26 17:35:25,495 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 17:35:25,495 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:35:25,495 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:35:25,552 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 1)
+2026-01-26 17:35:25,553 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:35:31,496 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:35:31,515 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 2)
+2026-01-26 17:35:31,517 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:35:37,497 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:35:37,521 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 3)
+2026-01-26 17:35:37,522 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x128b9fad0 state=finished raised ClientError>]
+2026-01-26 17:35:37,522 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 17:35:43,498 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 17:35:44,432 - tools.generators.image.piapi - INFO - Image task created: 5e8f5e96-e36d-45a5-b945-307b33d46c25
+2026-01-26 17:36:17,020 - tools.generators.image.piapi - INFO - Image generated: https://img.theapi.app/ephemeral/bacac673-3ecf-42ca-98ab-ce17f1bc8b79.png...
+2026-01-26 17:36:17,021 - root - INFO - Downloading image from https://img.theapi.app/ephemeral/bacac673-3ecf-42ca-98ab-ce17f1bc8b79.png to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_book.png
+2026-01-26 17:36:17,729 - root - INFO - Image downloaded successfully via HTTP to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_book.png
+2026-01-26 17:36:17,732 - PropReferenceGenerator - INFO - Generating visual reference for prop: Phone Screens
+2026-01-26 17:36:17,732 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 17:36:17,732 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:36:17,733 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:36:17,803 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 1)
+2026-01-26 17:36:17,806 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:36:23,734 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:36:23,767 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 2)
+2026-01-26 17:36:23,771 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:36:29,735 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:36:29,765 - root - WARNING - Retrying generate_single_image due to ClientError("400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}") (Attempt 3)
+2026-01-26 17:36:29,767 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x11e084250 state=finished raised ClientError>]
+2026-01-26 17:36:29,768 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 17:36:35,736 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 17:36:36,429 - tools.generators.image.piapi - INFO - Image task created: d447a7f6-a206-4842-873d-68e8b9dd7401
+2026-01-26 17:37:09,197 - tools.generators.image.piapi - INFO - Image generated: https://img.theapi.app/ephemeral/30823142-a0a6-46e3-91d8-4d731cc4725c.png...
+2026-01-26 17:37:09,197 - root - INFO - Downloading image from https://img.theapi.app/ephemeral/30823142-a0a6-46e3-91d8-4d731cc4725c.png to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_phone_screens.png
+2026-01-26 17:37:09,873 - root - INFO - Image downloaded successfully via HTTP to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/prop_references/prop_phone_screens.png
+2026-01-26 17:37:09,876 - pipelines.base.script - INFO - Registered character portrait for compositing: Millennial -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/1_Millennial/front.png
+2026-01-26 17:37:09,876 - pipelines.base.script - INFO - Registered character portrait for compositing: Boomer -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/3_Boomer/front.png
+2026-01-26 17:37:09,876 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen Z -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/0_Gen Z/front.png
+2026-01-26 17:37:09,876 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen X -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/2_Gen X/front.png
+2026-01-26 17:37:09,877 - pipelines.base.script - INFO - Character compositing enabled for 4 characters
+2026-01-26 17:37:09,881 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.

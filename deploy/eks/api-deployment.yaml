@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vimax-api
+  namespace: vimax
+  labels:
+    app: vimax-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vimax-api
+  template:
+    metadata:
+      labels:
+        app: vimax-api
+    spec:
+      containers:
+        - name: api
+          # Replace with your ECR URL
+          image: 000000000000.dkr.ecr.us-east-1.amazonaws.com/vimax-api:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: vimax-api-config
+            - secretRef:
+                name: vimax-api-secret
+                optional: true
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu: "500m"
+            limits:
+              memory: "2Gi"
+              cpu: "2000m"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 60
+            periodSeconds: 15
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 20
+            periodSeconds: 10

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: #e2e8f0;
+  background: #0c0a14;
+}
+
+body { margin: 0; min-height: 100vh; }
+
+.input-field {
+  @apply w-full rounded-lg border border-vimax-border bg-vimax-surface px-3 py-2 text-sm text-white placeholder-vimax-muted focus:border-vimax-accent focus:outline-none focus:ring-1 focus:ring-vimax-accent;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-vimax-bg disabled:opacity-50;
+}
+
+.btn-primary { @apply btn bg-vimax-accent text-white hover:bg-vimax-accent-dim focus:ring-vimax-accent; }
+.btn-ghost { @apply btn border border-vimax-border bg-vimax-surface text-vimax-muted hover:bg-vimax-border focus:ring-vimax-muted; }
+
+.card {
+  @apply rounded-xl border border-vimax-border bg-vimax-surface p-4 md:p-5;
+}
+
+.label { @apply mb-1 block text-xs font-medium text-vimax-muted; }

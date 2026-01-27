@@ -1,0 +1,76 @@
+2026-01-26 17:52:36,289 - utils.pipeline.generator_factory - INFO - Image generator rate limiting: 10 req/min, 500 req/day
+2026-01-26 17:52:36,289 - utils.pipeline.generator_factory - INFO - Video generator rate limiting: 2 req/min
+2026-01-26 17:52:36,289 - utils.pipeline.generator_factory - INFO - Creating unified generators with fallback chains...
+2026-01-26 17:52:36,289 - utils.pipeline.generator_factory - INFO -   Gemini API: ✓
+2026-01-26 17:52:36,289 - utils.pipeline.generator_factory - INFO -   PiAPI: ✓
+2026-01-26 17:52:36,289 - utils.pipeline.generator_factory - INFO -   KieAI: ✓
+2026-01-26 17:52:36,289 - tools.generators.factory - INFO - UnifiedImageGenerator initialized with model=nano-banana-pro
+2026-01-26 17:52:36,289 - tools.generators.factory - INFO -   Gemini API: ✓
+2026-01-26 17:52:36,289 - tools.generators.factory - INFO -   PiAPI: ✓
+2026-01-26 17:52:36,289 - tools.generators.factory - INFO -   KieAI: ✓
+2026-01-26 17:52:36,289 - tools.generators.factory - INFO - UnifiedVideoGenerator initialized
+2026-01-26 17:52:36,289 - tools.generators.factory - INFO -   KieAI (veo3_fast): ✓
+2026-01-26 17:52:36,289 - tools.generators.factory - INFO -   PiAPI (veo3.1): ✓
+2026-01-26 17:52:36,289 - tools.generators.factory - INFO -   Google (veo-3.1): ✓
+2026-01-26 17:52:36,289 - pipelines.social.shorts - INFO - Writing viral-optimized script...
+2026-01-26 17:52:36,290 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:52:39,698 - pipelines.social.shorts - INFO - Creating viral visual brief...
+2026-01-26 17:52:39,700 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:52:42,529 - pipelines.social.shorts - INFO - Initiating video production...
+2026-01-26 17:53:01,790 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:53:04,124 - pipelines.base.script - INFO - Registered character portrait for compositing: Millennial -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/1_Millennial/front.png
+2026-01-26 17:53:04,124 - pipelines.base.script - INFO - Registered character portrait for compositing: Boomer -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/3_Boomer/front.png
+2026-01-26 17:53:04,124 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen Z -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/0_Gen Z/front.png
+2026-01-26 17:53:04,124 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen X -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/2_Gen X/front.png
+2026-01-26 17:53:04,124 - pipelines.base.script - INFO - Character compositing enabled for 4 characters
+2026-01-26 17:53:04,124 - pipelines.base.script - INFO - Starting Script2VideoPipeline execution...
+2026-01-26 17:53:22,696 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:53:24,821 - pipelines.base.script - INFO - Generating prop references for 3 props...
+2026-01-26 17:53:24,822 - PropReferenceGenerator - INFO - Prop reference already exists for Red Wi-Fi Symbol, skipping generation.
+2026-01-26 17:53:24,822 - PropReferenceGenerator - INFO - Prop reference already exists for Router, skipping generation.
+2026-01-26 17:53:24,822 - PropReferenceGenerator - INFO - Prop reference already exists for Landline Phone, skipping generation.
+2026-01-26 17:53:24,822 - pipelines.base.script - INFO - Prop reference generation completed for 3 props.
+2026-01-26 17:53:24,822 - pipelines.base.script - INFO - Registered character portrait for compositing: Millennial -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/1_Millennial/front.png
+2026-01-26 17:53:24,823 - pipelines.base.script - INFO - Registered character portrait for compositing: Boomer -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/3_Boomer/front.png
+2026-01-26 17:53:24,823 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen Z -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/0_Gen Z/front.png
+2026-01-26 17:53:24,823 - pipelines.base.script - INFO - Registered character portrait for compositing: Gen X -> .working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/character_portraits/2_Gen X/front.png
+2026-01-26 17:53:24,823 - pipelines.base.script - INFO - Character compositing enabled for 4 characters
+2026-01-26 17:53:24,823 - pipelines.base.script - INFO - Creating director brief for storyboard/cinematography...
+2026-01-26 17:53:24,824 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:53:26,753 - pipelines.base.script - INFO - Director brief created successfully.
+2026-01-26 17:53:26,756 - pipelines.base.script - INFO - Designing storyboard from script...
+2026-01-26 17:53:26,756 - pipelines.base.script - INFO - Storyboard designed with 5 shots.
+2026-01-26 17:53:26,756 - pipelines.base.script - INFO - Decomposing visual descriptions for 5 shots...
+2026-01-26 17:53:26,757 - pipelines.base.script - INFO - Decomposed 5 shot descriptions.
+2026-01-26 17:53:26,757 - pipelines.base.script - INFO - Constructing camera tree...
+2026-01-26 17:53:26,757 - pipelines.base.script - INFO - Camera tree constructed with 5 cameras.
+2026-01-26 17:53:26,757 - pipelines.base.script - INFO - Starting frame generation for 5 cameras and 5 shots...
+2026-01-26 17:53:26,757 - pipelines.base.script - INFO - Executing 10 generation tasks in parallel...
+2026-01-26 17:53:26,786 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 17:53:29,261 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 17:53:29,262 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:53:29,262 - root - WARNING - Retrying generate_single_image due to FileNotFoundError(2, 'No such file or directory') (Attempt 1)
+2026-01-26 17:53:29,264 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:53:35,264 - root - WARNING - Retrying generate_single_image due to FileNotFoundError(2, 'No such file or directory') (Attempt 2)
+2026-01-26 17:53:35,266 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:53:41,264 - root - WARNING - Retrying generate_single_image due to FileNotFoundError(2, 'No such file or directory') (Attempt 3)
+2026-01-26 17:53:41,265 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x11182aaf0 state=finished raised FileNotFoundError>]
+2026-01-26 17:53:41,265 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 17:53:47,265 - tools.generators.image.piapi - WARNING - Reference image path not found: 
+2026-01-26 17:53:47,265 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 17:53:47,889 - tools.generators.image.piapi - INFO - Image task created: 04586b8b-9166-47bb-8fa1-81b2448d85a8
+2026-01-26 17:54:22,143 - tools.generators.image.piapi - INFO - Image generated: https://img.theapi.app/ephemeral/2fe00ec7-b906-408a-9c72-35ae7e49c89e.png...
+2026-01-26 17:54:22,144 - root - INFO - Downloading image from https://img.theapi.app/ephemeral/2fe00ec7-b906-408a-9c72-35ae7e49c89e.png to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/shots/0/first_frame_raw.png
+2026-01-26 17:54:22,781 - root - INFO - Image downloaded successfully via HTTP to /Users/devashishbadlani/dev/ViMax/.working_dir/video/viral_shorts_20260126_222626_fc38fd78/production/scene_0/shots/0/first_frame_raw.png
+2026-01-26 17:54:22,783 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 17:54:22,783 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:54:22,783 - root - WARNING - Retrying generate_single_image due to FileNotFoundError(2, 'No such file or directory') (Attempt 1)
+2026-01-26 17:54:22,784 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:54:28,786 - root - WARNING - Retrying generate_single_image due to FileNotFoundError(2, 'No such file or directory') (Attempt 2)
+2026-01-26 17:54:28,787 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 17:54:34,789 - root - WARNING - Retrying generate_single_image due to FileNotFoundError(2, 'No such file or directory') (Attempt 3)
+2026-01-26 17:54:34,798 - tools.generators.factory - WARNING - [Image Gen] Gemini API failed: RetryError[<Future at 0x1118568d0 state=finished raised FileNotFoundError>]
+2026-01-26 17:54:34,798 - tools.generators.factory - INFO - [Image Gen] Trying PiAPI nano-banana-pro (priority 2)...
+2026-01-26 17:54:40,790 - tools.generators.image.piapi - WARNING - Reference image path not found: 
+2026-01-26 17:54:40,790 - tools.generators.image.piapi - INFO - Creating image task with model: gemini and task_type: nano-banana-pro
+2026-01-26 17:54:41,238 - tools.generators.image.piapi - INFO - Image task created: c9550d9c-d40a-4867-8166-f9723acbfaa0

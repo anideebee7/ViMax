@@ -1,0 +1,55 @@
+# Song to Music Video Pipeline Configuration
+
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 200
+
+audio_generator_primary:
+  class_path: tools.ElevenLabsAudioGenerator
+  init_args:
+    api_key: ${ELEVENLABS_API_KEY}
+    model_id: ${ELEVENLABS_MODEL}
+    output_format: ${ELEVENLABS_OUTPUT_FORMAT}
+  max_requests_per_minute: 30
+
+audio_generator_fallback:
+  class_path: tools.PiAPIAudioGenerator
+  init_args:
+    api_key: ${PIAPI_API_KEY}
+    music_model: music-u
+    music_task_type: generate_music
+  max_requests_per_minute: 20
+
+image_generator:
+  class_path: tools.KieAIImageGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+  max_requests_per_minute: 20
+
+video_generator:
+  class_path: tools.KieAIVideoGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+  max_requests_per_minute: 10
+
+# Trend analyzer for music video trends
+trend_analyzer:
+  google_trends:
+    enabled: true
+  youtube_trends:
+    enabled: true
+    api_key: ${YOUTUBE_API_KEY}
+  reddit:
+    enabled: true
+    subreddits:
+      - musicvideos
+      - Music
+      - listentothis
+
+working_dir: .working_dir/musicvideo
+force_regenerate: false

@@ -1,0 +1,204 @@
+2026-01-26 14:58:02,398 - utils.pipeline.generator_factory - INFO - Creating unified generators with fallback chains...
+2026-01-26 14:58:02,398 - utils.pipeline.generator_factory - INFO -   Gemini API: ✓
+2026-01-26 14:58:02,398 - utils.pipeline.generator_factory - INFO -   PiAPI: ✓
+2026-01-26 14:58:02,398 - utils.pipeline.generator_factory - INFO -   KieAI: ✓
+2026-01-26 14:58:02,398 - tools.generators.factory - INFO - UnifiedImageGenerator initialized with model=nano-banana-pro
+2026-01-26 14:58:02,398 - tools.generators.factory - INFO -   Gemini API: ✓
+2026-01-26 14:58:02,398 - tools.generators.factory - INFO -   PiAPI: ✓
+2026-01-26 14:58:02,398 - tools.generators.factory - INFO -   KieAI: ✓
+2026-01-26 14:58:02,398 - tools.generators.factory - INFO - UnifiedVideoGenerator initialized
+2026-01-26 14:58:02,398 - tools.generators.factory - INFO -   KieAI (veo3_fast): ✓
+2026-01-26 14:58:02,398 - tools.generators.factory - INFO -   PiAPI (veo3.1): ✓
+2026-01-26 14:58:02,398 - tools.generators.factory - INFO -   Google (veo-3.1): ✓
+2026-01-26 14:58:02,398 - pipelines.movies.short_video - INFO - Phase 0: Resolving S3 entities for character consistency...
+2026-01-26 14:58:02,399 - pipelines.movies.short_video - INFO - Phase 1: Generating story and script...
+2026-01-26 14:58:02,399 - pipelines.movies.short_video - INFO -   Resuming from existing story: .working_dir/video_shorts/video_20260126_064410_7b9abfac/story.txt
+2026-01-26 14:58:02,399 - pipelines.movies.short_video - INFO -   Resuming from existing characters: .working_dir/video_shorts/video_20260126_064410_7b9abfac/characters.json
+2026-01-26 14:58:02,399 - pipelines.movies.short_video - INFO -   Resuming from existing script: .working_dir/video_shorts/video_20260126_064410_7b9abfac/script.json
+2026-01-26 14:59:16,461 - utils.pipeline.generator_factory - INFO - Creating unified generators with fallback chains...
+2026-01-26 14:59:16,461 - utils.pipeline.generator_factory - INFO -   Gemini API: ✓
+2026-01-26 14:59:16,461 - utils.pipeline.generator_factory - INFO -   PiAPI: ✓
+2026-01-26 14:59:16,461 - utils.pipeline.generator_factory - INFO -   KieAI: ✓
+2026-01-26 14:59:16,461 - tools.generators.factory - INFO - UnifiedImageGenerator initialized with model=nano-banana-pro
+2026-01-26 14:59:16,461 - tools.generators.factory - INFO -   Gemini API: ✓
+2026-01-26 14:59:16,461 - tools.generators.factory - INFO -   PiAPI: ✓
+2026-01-26 14:59:16,461 - tools.generators.factory - INFO -   KieAI: ✓
+2026-01-26 14:59:16,461 - tools.generators.factory - INFO - UnifiedVideoGenerator initialized
+2026-01-26 14:59:16,461 - tools.generators.factory - INFO -   KieAI (veo3_fast): ✓
+2026-01-26 14:59:16,461 - tools.generators.factory - INFO -   PiAPI (veo3.1): ✓
+2026-01-26 14:59:16,461 - tools.generators.factory - INFO -   Google (veo-3.1): ✓
+2026-01-26 14:59:16,462 - pipelines.movies.short_video - INFO - Phase 0: Resolving S3 entities for character consistency...
+2026-01-26 14:59:16,462 - pipelines.movies.short_video - INFO - Phase 1: Generating story and script...
+2026-01-26 14:59:16,462 - pipelines.movies.short_video - INFO -   Resuming from existing story: .working_dir/video_shorts/video_20260126_064410_7b9abfac/story.txt
+2026-01-26 14:59:16,462 - pipelines.movies.short_video - INFO -   Resuming from existing characters: .working_dir/video_shorts/video_20260126_064410_7b9abfac/characters.json
+2026-01-26 14:59:16,462 - pipelines.movies.short_video - INFO -   Resuming from existing script: .working_dir/video_shorts/video_20260126_064410_7b9abfac/script.json
+2026-01-26 14:59:16,463 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 1/10...
+2026-01-26 14:59:16,463 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 1...
+2026-01-26 14:59:16,464 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:18,763 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 1 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: EXTREME WIDE SHOT. The camera is positioned low, almost at ground level, looking up at <R1-Unit> (boxy, weathered, dented, and covered in dust). The robot is a small, lonely figure against the vast, oppressive desert landscape. The sun is a white-hot disc in the sky, bleaching out the colors of the sand. Wind whips across the dunes, creating swirling patterns. The robot's silhouette is stark and imposing. The composition emphasizes the desolation and the robot's isolation. Chiaroscuro lighting, with deep shadows on the robot's body, accentuates its age and damage.
+
+2026-01-26 14:59:18,764 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 1: name 'scene' is not defined
+2026-01-26 14:59:18,809 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 14:59:18,810 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 14:59:18,810 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:25,426 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 14:59:25,494 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_01/frame_01.png
+2026-01-26 14:59:25,494 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_neutral) onto frame_01.png at center
+2026-01-26 14:59:25,494 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 2/10...
+2026-01-26 14:59:25,494 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 2...
+2026-01-26 14:59:25,496 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:28,589 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 2 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: EXT. DESERTED ISLAND - DAY. Medium shot of <R1-Unit> (boxy, weathered, dented, and covered in dust). Its optical sensor, dull and lifeless, focuses on something off-screen with a flicker of renewed interest. The camera slowly PANS down, following <R1-Unit>'s gaze. The harsh sunlight casts long shadows, emphasizing the desolation. The composition adheres to the rule of thirds, placing <R1-Unit> slightly off-center to create a sense of unease and anticipation.
+
+2026-01-26 14:59:28,589 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 2: name 'scene' is not defined
+2026-01-26 14:59:28,589 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 14:59:28,589 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 14:59:28,589 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:34,952 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 14:59:35,009 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_02/frame_01.png
+2026-01-26 14:59:35,010 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_neutral) onto frame_01.png at center
+2026-01-26 14:59:35,010 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 3/10...
+2026-01-26 14:59:35,010 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 3...
+2026-01-26 14:59:35,011 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:37,198 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 3 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: EXTREME CLOSE-UP on <R1-Unit>'s metallic hand. Rust flakes are highly visible against the backdrop of the dusty record player. The hand is stiff and hesitant as it brushes dust from the vinyl record. Focus is razor-sharp on the contact point between the hand and the record. The vinyl label is partially visible, revealing the words "Midnight Bloom" in elegant script. The desert stretches endlessly in the background, slightly blurred to maintain focus on the foreground elements. Strong sunlight casts harsh shadows, emphasizing the textures of the metal and dust.
+
+2026-01-26 14:59:37,198 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 3: name 'scene' is not defined
+2026-01-26 14:59:37,198 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 14:59:37,199 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 14:59:37,199 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:43,339 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 14:59:43,402 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_03/frame_01.png
+2026-01-26 14:59:43,402 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_neutral) onto frame_01.png at center
+2026-01-26 14:59:43,403 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 4/10...
+2026-01-26 14:59:43,403 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 4...
+2026-01-26 14:59:43,404 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:45,313 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 4 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: EXT. DESERTED ISLAND - DAY. A medium shot of <R1-Unit> (boxy, weathered, dented, and covered in dust). The robot stands amidst the desolate landscape, a vintage record player positioned on a makeshift table constructed from salvaged debris. The sun beats down, casting harsh shadows that accentuate the robot's aged features. A solar panel, precariously attached to <R1-Unit>'s back, glints in the sunlight. The landscape stretches behind, a canvas of sand and scattered wreckage. The composition follows the rule of thirds, placing <R1-Unit> slightly off-center to emphasize the surrounding desolation. 
+
+2026-01-26 14:59:45,313 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 4: name 'scene' is not defined
+2026-01-26 14:59:45,313 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 14:59:45,313 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 14:59:45,313 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:45,890 - root - WARNING - Retrying generate_single_image due to AttributeError("'NoneType' object has no attribute 'parts'") (Attempt 1)
+2026-01-26 14:59:45,896 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 14:59:45,896 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:56,135 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 14:59:56,195 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_04/frame_01.png
+2026-01-26 14:59:56,196 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_neutral) onto frame_01.png at center
+2026-01-26 14:59:56,196 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 5/10...
+2026-01-26 14:59:56,196 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 5...
+2026-01-26 14:59:56,198 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 14:59:58,608 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 5 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: EXTREME CLOSE-UP of <R1-Unit>'s metallic feet on the gritty, sun-baked sand. The camera is positioned at ground level, looking slightly UP at the droid's feet. The sand is a mix of light beige and darker, almost black, grains. The harsh sunlight casts stark shadows, emphasizing the texture of the sand and the wear and tear on the metal joints. The droid's feet are boxy, weathered, dented, and covered in dust. The background is a blurred expanse of shimmering heat haze, giving a sense of isolation. The depth of field is extremely shallow, throwing everything but the immediate area around the feet out of focus. Each step leaves a faint trail in the dust. The composition is asymmetrical, with the droid's feet entering the frame from the left.
+
+2026-01-26 14:59:58,608 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 5: name 'scene' is not defined
+2026-01-26 14:59:58,608 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 14:59:58,608 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 14:59:58,608 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:05,989 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 15:00:06,046 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_05/frame_01.png
+2026-01-26 15:00:06,046 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_neutral) onto frame_01.png at center
+2026-01-26 15:00:06,046 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 6/10...
+2026-01-26 15:00:06,046 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 6...
+2026-01-26 15:00:06,047 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:08,131 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 6 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: A medium shot focusing on <R1-Unit> (boxy, weathered, dented, and covered in dust) in the center of the frame. The camera is positioned at a low angle, making <R1-Unit> appear larger and more imposing against the stark, grey sand of the deserted island. <R1-Unit> begins to sway subtly. Its movements, though still mechanical, show a hint of fluidity. Around its feet, tiny sprouts of neon-colored moss emerge from the sand, resembling veins of light spreading across the grey landscape. The lighting is harsh and direct from above, casting strong shadows and highlighting the textures of <R1-Unit>'s weathered exterior and the vibrant moss.
+
+2026-01-26 15:00:08,131 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 6: name 'scene' is not defined
+2026-01-26 15:00:08,131 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 15:00:08,131 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 15:00:08,131 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:14,720 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 15:00:14,782 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_06/frame_01.png
+2026-01-26 15:00:14,782 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_neutral) onto frame_01.png at center
+2026-01-26 15:00:14,783 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 7/10...
+2026-01-26 15:00:14,783 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 7...
+2026-01-26 15:00:14,784 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:17,229 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 7 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: A wide shot, low angle. <R1-Unit> (boxy, weathered, dented, covered in dust) is dancing gracefully on the beach. The camera looks up at it, emphasizing its height against the backdrop of the vast, cloud-streaked sky. Neon moss spreads rapidly from its feet, illuminating the sand with a vibrant, pulsating glow. The jazz music is reflected in the glossy sheen of the moss. The lighting is dramatic, with the setting sun casting long shadows and the neon moss providing a contrasting, otherworldly illumination. The composition follows the rule of thirds, placing <R1-Unit> slightly off-center to create a more dynamic image.
+
+2026-01-26 15:00:17,229 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 7: name 'scene' is not defined
+2026-01-26 15:00:17,229 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 15:00:17,229 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 15:00:17,229 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:23,319 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 15:00:23,372 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_07/frame_01.png
+2026-01-26 15:00:23,372 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_neutral) onto frame_01.png at center
+2026-01-26 15:00:23,373 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 8/10...
+2026-01-26 15:00:23,373 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 8...
+2026-01-26 15:00:23,374 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:25,323 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 8 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: EXTREME CLOSE-UP of a single, neon flower blooming against the backdrop of a desolate, sandy landscape. The flower's petals are a riot of electric blue, magenta, and lime green, casting an otherworldly glow. The camera focuses tightly on <R1-Unit>'s optical sensor, reflecting the flower's vibrant light. The sensor glows with a newfound intensity, hinting at a sense of wonder or awakening. The desert sand is coarse and textured, providing a stark contrast to the flower's artificial beauty. Soft, diffused sunlight illuminates the scene, creating a dreamlike quality.
+
+2026-01-26 15:00:25,323 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 8: name 'scene' is not defined
+2026-01-26 15:00:25,323 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 15:00:25,324 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 15:00:25,324 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:31,039 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 15:00:31,101 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_08/frame_01.png
+2026-01-26 15:00:31,102 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_neutral) onto frame_01.png at center
+2026-01-26 15:00:31,102 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 9/10...
+2026-01-26 15:00:31,102 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 9...
+2026-01-26 15:00:31,103 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:33,929 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 9 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: EXT. DESERTED ISLAND - DAY. A wide, low-angle shot emphasizes the transformation of the island. <R1-Unit> (boxy, weathered, dented, and covered in dust) spins center frame, now bathed in pulsating neon light that emanates from within its chassis. The camera slowly zooms in, revealing the fluid, almost dance-like quality of its movements. Neon vines rapidly snake up the trunks of previously dead trees, their surfaces now glowing with bioluminescent patterns. Giant, glowing mushrooms erupt from the sand in the foreground, casting an eerie, colorful light. The sky is a swirling mix of purple and orange, as if reacting to <R1-Unit>'s energy. The composition uses the rule of thirds, with <R1-Unit> positioned on the left vertical line, and the transformed island filling the right two-thirds of the frame.
+
+2026-01-26 15:00:33,929 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 9: name 'scene' is not defined
+2026-01-26 15:00:33,929 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 15:00:33,929 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 15:00:33,929 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:40,082 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 15:00:40,135 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_09/frame_01.png
+2026-01-26 15:00:40,136 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_happy) onto frame_01.png at center
+2026-01-26 15:00:40,136 - pipelines.movies.short_video - INFO - Phase 2: Processing scene 10/10...
+2026-01-26 15:00:40,136 - pipelines.movies.short_video - INFO -   Generating storyboard for scene 10...
+2026-01-26 15:00:40,137 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:42,316 - pipelines.movies.short_video - INFO - 
+🎬 [SCENE 10 SHOT 1] DEBUG INFO:
+   👥 Characters (1): R1-Unit
+   ⏱️ Duration: 8s (standard)
+   📝 Visual Plan: EXTREME WIDE SHOT. The island is transformed into a NEON PARADISE. Towering alien flora glows with bioluminescent colors - electric blues, toxic greens, and pulsating pinks. <R1-Unit> (boxy, weathered, dented, and covered in dust) stands silhouetted in the center of the frame, facing away from the camera, arms slightly outstretched as if embracing the scene. The horizon line is low, emphasizing the alien sky swirling with nebulae. Chiaroscuro lighting from the alien plants casts dramatic shadows. The wind whips through the glowing foliage.
+
+2026-01-26 15:00:42,316 - pipelines.movies.short_video - WARNING -   Storyboard generation failed for scene 10: name 'scene' is not defined
+2026-01-26 15:00:42,316 - tools.generators.factory - INFO - [Image Gen] Trying Gemini API (priority 1)...
+2026-01-26 15:00:42,316 - root - INFO - Calling gemini-2.5-flash-image to generate image...
+2026-01-26 15:00:42,316 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:48,981 - root - INFO - Removed solid background (detected color: (239, 239, 234), light_bg: True)
+2026-01-26 15:00:49,036 - root - INFO - Composited character onto image: .working_dir/video_shorts/video_20260126_064410_7b9abfac/scenes/scene_10/frame_01.png
+2026-01-26 15:00:49,037 - pipelines.movies.short_video - INFO - Composited R1-Unit (front_sad) onto frame_01.png at center
+2026-01-26 15:00:49,037 - pipelines.movies.short_video - INFO - Phase 5: Generating monetization plan...
+2026-01-26 15:00:49,038 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:00:56,187 - pipelines.movies.short_video - INFO - Performing final continuity audit...
+2026-01-26 15:00:56,188 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-26 15:01:00,201 - pipelines.movies.short_video - INFO - Syncing run state to S3: s3://intelli-verse-x-media/agent-assets/memory/short_video/short_video_20260126_205916_fb849d8e
+2026-01-26 15:01:00,202 - utils.pipeline.run_memory - INFO - ☁️ Syncing run short_video_20260126_205916_fb849d8e to S3: s3://intelli-verse-x-media/agent-assets/memory/short_video/short_video_20260126_205916_fb849d8e
+2026-01-26 15:01:01,023 - pipelines.movies.short_video - INFO - Pipeline complete!

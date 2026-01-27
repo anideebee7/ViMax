@@ -1,0 +1,68 @@
+# Podcast to Video Pipeline Configuration
+# Generates complete video episodes from podcast scripts using S3-hosted characters
+
+# Chat model for script enhancement and dialogue generation
+chat_model:
+  init_args:
+    model: "grok-3-beta"
+    model_provider: "openai"
+    api_key: ${XAI_API_KEY}
+    base_url: "https://api.x.ai/v1"
+  max_requests_per_minute: 10
+  max_requests_per_day: null
+
+# Image generator for scene frames and character portraits
+# Using PiAPI Flux for image generation
+image_generator:
+  class_path: tools.generators.image.image_generator_piapi.PiAPIImageGenerator
+  init_args:
+    api_key: ${PIAPI_API_KEY}
+    model: "flux"
+  max_requests_per_minute: 10
+  max_requests_per_day: null
+
+# Video generator for scene videos
+# Using PiAPI Veo 3.1 for high-quality video generation
+video_generator:
+  class_path: tools.generators.video.video_generator_piapi.PiAPIVideoGenerator
+  init_args:
+    api_key: ${PIAPI_API_KEY}
+    model: "veo3.1"
+    duration_seconds: 8
+    aspect_ratio: "16:9"
+  max_requests_per_minute: 3
+  max_requests_per_day: null
+
+# Podcast-specific configuration
+podcast:
+  # Brand to load characters from
+  brand_id: "intelli-verse-x"
+  
+  # Working directory for outputs
+  working_dir: ".working_dir/podcast"
+  
+  # Maximum duration per scene video (seconds)
+  max_scene_duration: 60
+  
+  # Visual style for video generation
+  video_style: "3D animated cartoon style, vibrant colors, kid-friendly, cosmic and whimsical aesthetic"
+  
+  # Audio style for voice generation (future)
+  audio_style: "warm, engaging, enthusiastic podcast host voice"
+  
+  # Include subtitles in final video
+  include_subtitles: true
+  
+  # Include background music
+  include_background_music: true
+  
+  # Character name mappings (script names -> S3 identifiers)
+  character_mappings:
+    Autocurio: autocurio
+    AUTOcurio: autocurio  # Legacy alias
+    DotDot: DotDot
+    Gloop: Gloop
+    "Nana Nova": NanaNova
+    Thinker: Tinker  # Script may use Thinker, S3 has Tinker
+    Tinker: Tinker
+    Whispurr: Whispurr

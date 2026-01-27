@@ -1,0 +1,38 @@
+# Idea to Ad Banners Pipeline
+# High-converting display/social ad banners for brands and games.
+# Targets 25%+ CTR with creative, trend, and conversion-focused variants.
+
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 200
+
+image_generator:
+  class_path: tools.PiAPIImageGenerator
+  init_args:
+    api_key: ${PIAPI_API_KEY}
+    model: ${PIAPI_IMAGE_MODEL}
+    output_format: png
+    aspect_ratio: "16:9"
+  max_requests_per_minute: 20
+
+trend_analyzer:
+  google_trends:
+    enabled: true
+  reddit:
+    enabled: true
+    subreddits:
+      - advertising
+      - marketing
+      - gamedev
+      - MobileGaming
+  youtube_trends:
+    enabled: false
+  newsapi:
+    enabled: false
+  category_filter: advertising
+
+working_dir: .working_dir/adbanners
+force_regenerate: false

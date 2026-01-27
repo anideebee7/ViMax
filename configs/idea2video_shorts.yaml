@@ -1,0 +1,47 @@
+# Shorts Mode Configuration - Optimized for 15-30 second videos
+# Creates crisp, short-form content suitable for social media shorts
+
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 500
+  max_requests_per_day: 2000
+
+image_generator:
+  class_path: tools.GoogleImageGenerator
+  init_args:
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 10
+  max_requests_per_day: 500
+
+video_generator:
+  class_path: tools.VeoGoogleVideoGenerator
+  init_args:
+    api_key: ${GEMINI_API_KEY}
+    # Shorter duration for crisp shorts (5 seconds per shot)
+    default_duration: 5
+    # Vertical aspect ratio for social media shorts
+    default_aspect_ratio: "9:16"
+  max_requests_per_minute: 2
+  max_requests_per_day: null
+
+working_dir: .working_dir/video_shorts
+force_regenerate: true
+
+# Shorts-specific settings
+shorts_mode:
+  enabled: true
+  max_shots: 4
+  target_duration_seconds: 20
+  min_shot_seconds: 4
+  max_shot_seconds: 8
+  # User requirement to pass to storyboard artist
+  user_requirement_suffix: "Create a SHORT video with MAXIMUM 4 shots. Keep it crisp and fast-paced. Each shot should be impactful and concise. This is for a social media short format in vertical 9:16."
+
+# Character portrait overrides (same as regular mode)
+character_portrait_overrides: []
+
+# Global reference images
+global_reference_images: []

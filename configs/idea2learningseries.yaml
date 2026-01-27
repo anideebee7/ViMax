@@ -1,0 +1,43 @@
+# Idea to Learning Series Pipeline Configuration
+
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 200
+
+# Image generator for educational visuals
+image_generator:
+  class_path: tools.image_generator_piapi.PiAPIImageGenerator
+  init_args:
+    api_key: ${PIAPI_API_KEY}
+    model: nano-banana-pro
+  max_requests_per_minute: 10
+
+# Video generator for episode segments
+video_generator:
+  class_path: tools.video_generator_piapi.PiAPIVideoGenerator
+  init_args:
+    api_key: ${PIAPI_API_KEY}
+    model: veo3.1
+  max_requests_per_minute: 5
+
+# Trend analyzer for educational content
+trend_analyzer:
+  google_trends:
+    enabled: true
+  youtube_trends:
+    enabled: true
+    api_key: ${YOUTUBE_API_KEY}
+  reddit:
+    enabled: true
+    subreddits:
+      - learnprogramming
+      - education
+      - OnlineLearning
+  newsapi:
+    enabled: false
+
+working_dir: .working_dir/learningseries
+force_regenerate: false

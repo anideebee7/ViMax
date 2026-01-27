@@ -61,6 +61,7 @@ https://github.com/user-attachments/assets/5bad46b2-8276-4e1d-9480-3522640744b2
 - [🔮 Demos](#Video-Demos-Generated-from-Scratch)
 - [🏗️ Architecture](#️-architecture)
 - [🚀 Quick Start](#quick-start)
+- [🐳 Docker](#-docker)
 
 ---
 ## 💡Key Features
@@ -402,10 +403,36 @@ cd ViMax
 uv sync
 ```
 
+### 🐳 **Docker**
+
+To run the **API** and **Frontend** with Docker:
+
+```bash
+cp .env.example .env
+# Edit .env (API keys, S3, etc.)
+docker compose up --build
+```
+
+- **API**: http://localhost:8000  
+- **Frontend**: http://localhost:5173  
+
+See **[DOCKER.md](./DOCKER.md)** for details and production usage.
 
 ### 🎯 **Usage**
-main_idea2video.py is used to convert your ideas into videos.
-You need to configure the model and API key information in the configs/idea2video.yaml file, including three parts—the chat model, the image generator, and the video generator, as shown below
+
+#### 📋 **API Keys Setup**
+
+Before using ViMax, you need to obtain API keys. See **[API_KEYS_SETUP.md](./API_KEYS_SETUP.md)** for detailed step-by-step instructions.
+
+**Quick Summary:**
+- **OpenRouter API Key**: Get from [openrouter.ai/keys](https://openrouter.ai/keys) - for chat model
+- **Google AI Studio API Key**: Get from [aistudio.google.com](https://aistudio.google.com/) - for image & video generation
+- **KieAI API Key**: Get from [kie.ai](https://kie.ai/) - for cost-effective Veo 3.1 and Nano Banana Pro generation
+
+---
+
+main_video.py is used to convert your ideas into videos.
+You need to configure the model and API key information in the configs/video.yaml file, including three parts—the chat model, the image generator, and the video generator, as shown below
 ```yaml
 chat_model:
   init_args:
@@ -424,10 +451,42 @@ video_generator:
   init_args:
     api_key: <YOUR_API_KEY>
 
-working_dir: .working_dir/idea2video
+working_dir: .working_dir/video
 ```
 
-Then, provide a simple yet thoughtful idea and the corresponding creative requirements in main_idea2video.py.
+#### 🔑 **How to Get API Keys**
+
+You need to obtain **3 API keys** to use ViMax:
+
+**1. OpenRouter API Key (for Chat Model)**
+- Visit [OpenRouter.ai](https://openrouter.ai/)
+- Sign up or log in to your account
+- Go to [API Keys](https://openrouter.ai/keys) page
+- Click "Create Key" to generate a new API key
+- Copy the API key and paste it in `configs/video.yaml` under `chat_model.init_args.api_key`
+- **Note**: OpenRouter provides access to various models including Google Gemini. You'll need credits in your OpenRouter account to use the API.
+
+**2. Google AI Studio API Key (for Image Generation)**
+- Visit [Google AI Studio](https://aistudio.google.com/)
+- Sign in with your Google account
+- Click on "Get API Key" in the left sidebar
+- Create a new API key or use an existing one
+- Copy the API key and paste it in `configs/video.yaml` under `image_generator.init_args.api_key`
+- **Note**: This uses Google's Gemini image generation API (`gemini-2.5-flash-image` model)
+
+**3. Google AI Studio API Key (for Video Generation)**
+- Use the **same Google AI Studio API key** from step 2, OR create a separate one
+- Paste it in `configs/video.yaml` under `video_generator.init_args.api_key`
+- **Note**: This uses Google's Veo video generation API (`veo-3.1-generate-preview` model)
+
+**💡 Tip**: You can use the same Google AI Studio API key for both image and video generation, or create separate keys for better tracking and rate limit management.
+
+**⚠️ Important**: 
+- Keep your API keys secure and never commit them to version control
+- Check the rate limits in the config file and adjust based on your API plan
+- Google AI Studio may have usage quotas and billing requirements
+
+Then, provide a simple yet thoughtful idea and the corresponding creative requirements in main_video.py.
 ```bash
 idea = \
 """
@@ -438,6 +497,24 @@ user_requirement = \
 For children, do not exceed 3 scenes.
 """
 style = "Cartoon"
+```
+
+main_song.py generates a song (audio + lyrics + cover image) from a short idea.
+Configure `configs/song.yaml` with ElevenLabs (primary) and PiAPI (fallback) keys.
+```yaml
+audio_generator_primary:
+  class_path: tools.AudioGeneratorElevenLabs
+  init_args:
+    api_key: <YOUR_ELEVENLABS_KEY>
+
+audio_generator_fallback:
+  class_path: tools.AudioGeneratorPiAPI
+  init_args:
+    api_key: <YOUR_PIAPI_KEY>
+```
+Then update `main_song.py` with your idea and style, and run:
+```bash
+uv run python main_song.py
 ```
 
 main_script2video.py generates a video based on a specific script.

@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from typing import List, Optional, Literal, Tuple
 
 
@@ -27,15 +27,26 @@ class ShotBriefDescription(BaseModel):
     )
 
 
-    # audio
+    # audio (optional: LLM may omit or set null when there is no audio in the shot)
     audio_desc: str = Field(
-        description="A detailed description of the audio in the shot.",
+        default="",
+        description="A detailed description of the audio in the shot, or empty if none.",
         examples=[
             "[Sound Effect] Ambient sound (supermarket background noise, shopping cart wheels rolling)",
             "[Speaker] Alice (Happy): Hello, how are you?",
-            None,
+            "",
         ],
     )
+    duration_seconds: Optional[int] = Field(
+        default=None,
+        description="Estimated duration of the shot in seconds.",
+        examples=[3, 5, 8],
+    )
+
+    @field_validator("audio_desc", mode="before")
+    @classmethod
+    def _audio_desc_none_to_empty(cls, v: Optional[str]) -> str:
+        return v if (v is not None and v != "") else ""
 
     # sound_effect: Optional[str] = Field(
     #     default=None,
@@ -83,12 +94,8 @@ class ShotBriefDescription(BaseModel):
         s = f"Shot {self.idx}:\n"
         s += f"Camera Index: {self.cam_idx}\n"
         s += f"Visual: {self.visual_desc}\n"
-        if self.sound_effect is not None or self.speaker is not None:
-            s += f"Audio:"
-            if self.sound_effect is not None:
-                s += f"[Sound Effect] {self.sound_effect}"
-            if self.speaker is not None:
-                s += f"[Speaker] {self.speaker} ({self.emotion}): {self.line}"
+        if self.audio_desc:
+            s += f"Audio: {self.audio_desc}\n"
         return s
 
 
@@ -158,15 +165,27 @@ class ShotDescription(BaseModel):
         If there is a conversation, please write down the content of the conversation), when you meet some dialogue, you should write into the visual content description with :" " symbols and the character's features (eg. SLING (male, late 20s, Texan accent softened by military precision, confident and energetic.) says: "Gear retracted. Flaps transitioning. Flight path stable. You are clear to climb."). If there is a narration, you should write into the visual content description with :" " symbols and the narration's features (eg. Narration: "Everything is looking good. "). ''',
     )
 
-    # audio
+    # audio (optional: LLM may omit or set null when there is no audio in the shot)
     audio_desc: str = Field(
-        description="A detailed description of the audio in the shot.",
+        default="",
+        description="A detailed description of the audio in the shot, or empty if none.",
         examples=[
             "[Sound Effect] Ambient sound (supermarket background noise, shopping cart wheels rolling)",
             "[Speaker] Alice (Happy): Hello, how are you?",
-            None,
+            "",
         ],
     )
+    duration_seconds: Optional[int] = Field(
+        default=None,
+        description="Estimated duration of the shot in seconds.",
+        examples=[3, 5, 8],
+    )
+
+    @field_validator("audio_desc", mode="before")
+    @classmethod
+    def _audio_desc_none_to_empty(cls, v: Optional[str]) -> str:
+        return v if (v is not None and v != "") else ""
+
     # sound_effect: Optional[str] = Field(
     #     default=None,
     #     description="The sound effects used in the shot. For example, a door creaking or footsteps approaching.",

@@ -1,0 +1,35 @@
+# Idea to Kids Movie Pipeline Configuration
+
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    api_key: ${GEMINI_API_KEY}
+  max_requests_per_minute: 200
+
+image_generator:
+  class_path: tools.KieAIImageGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+  max_requests_per_minute: 20
+
+video_generator:
+  class_path: tools.KieAIVideoGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+  max_requests_per_minute: 10
+
+# Trend analyzer for kids content
+trend_analyzer:
+  google_trends:
+    enabled: true
+  youtube_trends:
+    enabled: true
+    api_key: ${YOUTUBE_API_KEY}
+  reddit:
+    enabled: false
+
+working_dir: .working_dir/kidsmovie
+force_regenerate: false

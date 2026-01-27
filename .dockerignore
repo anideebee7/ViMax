@@ -1,0 +1,17 @@
+# ViMax backend image – exclude frontend and dev artifacts
+
+frontend/
+.git/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.env
+.env.*
+.tmp_s3/
+.tmp_s3games/
+*.log
+.DS_Store
+uv.lock

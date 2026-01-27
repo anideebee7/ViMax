@@ -1,0 +1,43 @@
+chat_model:
+  init_args:
+    model: gemini-2.0-flash
+    model_provider: google_genai
+    # Set via env: GEMINI_API_KEY
+    api_key: ${GEMINI_API_KEY}
+  # Rate limits for chat model API calls
+  # Set to null to disable rate limiting for this service
+  max_requests_per_minute: 500
+  max_requests_per_day: 2000
+
+image_generator:
+  class_path: tools.KieAIImageGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+  # Rate limits for image generation API calls
+  # Set to null to disable rate limiting for this service
+  max_requests_per_minute: 10
+  max_requests_per_day: 500
+
+
+video_generator:
+  class_path: tools.KieAIVideoGenerator
+  init_args:
+    api_key: ${KIEAI_API_KEY}
+    piapi_api_key: ${PIAPI_API_KEY}
+  # Rate limits for video generation API calls
+  # Set to null to disable rate limiting for this service
+  max_requests_per_minute: 2
+  max_requests_per_day: null
+
+
+working_dir: .working_dir/video
+force_regenerate: true
+
+# Optional character portrait overrides for specific identifiers
+character_portrait_overrides:
+  - identifier: AUTOcurio
+    front_path: assets/autocurio_reference.png# Global reference images available to all frames
+global_reference_images:
+  - path: assets/quizverse_icon.png
+    description: "QuizVerse app icon (QV letters on purple tiles). Use this for any on-screen app icon or logo."

@@ -12,3 +12,10 @@ wheels/
 # working directory
 .working_dir/
 .test/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+config.bat
+node_modules
